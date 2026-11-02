@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gopichand1998-cse.github.io/avsconventionhall/sitemap.xml

@@ -9,6 +9,37 @@
   <meta name="description" content="AVS Convention Hall A/C, Srinivasa Colony, Mahabubnagar. Wedding, reception and family function bookings.">
   <meta name="keywords" content="AVS Convention Hall, AVS Convention Hall AC, function hall Mahabubnagar, marriage hall Mahabubnagar">
   <meta name="theme-color" content="#641b25">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://gopichand1998-cse.github.io/avsconventionhall/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AVS Convention Hall A/C | Mahabubnagar">
+  <meta property="og:description" content="Explore AVS Convention Hall A/C in Srinivasa Colony, Mahabubnagar. Enquire about weddings, receptions and family functions.">
+  <meta property="og:url" content="https://gopichand1998-cse.github.io/avsconventionhall/">
+  <meta property="og:site_name" content="AVS Convention Hall A/C">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AVS Convention Hall A/C | Mahabubnagar">
+  <meta name="twitter:description" content="A venue for weddings, receptions and special celebrations in Mahabubnagar.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EventVenue",
+    "name": "AVS Convention Hall A/C",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Srinivasa Colony",
+      "addressLocality": "Mahabubnagar",
+      "addressRegion": "Telangana",
+      "addressCountry": "IN"
+    },
+    "telephone": ["+91 90008 65070", "+91 94914 91719"],
+    "url": "https://gopichand1998-cse.github.io/avsconventionhall/",
+    "sameAs": ["https://www.instagram.com/avs_convention_ac_hall/"]
+  }
+  </script>
+
+  <!-- Google Analytics 4: add your real Measurement ID (G-XXXXXXXXXX) before enabling.
+       Do not publish this script with the placeholder. Add a privacy notice before tracking visitors. -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -927,6 +958,36 @@
         font-size: 11px;
       }
     }
+
+    /* VENUE CAPACITY */
+    .capacity-section { padding: 34px 0; background: #fff; }
+    .capacity-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .capacity-card { text-align: center; padding: 24px 18px; border: 1px solid var(--light-gold); border-radius: 8px; background: var(--cream); }
+    .capacity-card strong { display: block; color: var(--maroon); font-family: 'Cormorant Garamond', serif; font-size: clamp(34px, 5vw, 48px); line-height: 1.1; }
+    .capacity-card span { color: var(--muted); font-size: 14px; font-weight: 600; }
+
+    /* ONLINE BOOKING ENQUIRY */
+    .booking-form-section { padding: 76px 0; background: #fff; }
+    .booking-form-wrap { max-width: 820px; margin: auto; padding: clamp(22px, 4vw, 38px); background: var(--cream); border: 1px solid var(--light-gold); border-radius: 10px; box-shadow: var(--shadow); }
+    .booking-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .form-field { display: flex; flex-direction: column; gap: 7px; }
+    .form-field.full { grid-column: 1 / -1; }
+    .form-field label { color: var(--dark-maroon); font-size: 13px; font-weight: 600; }
+    .form-field input, .form-field select, .form-field textarea { width: 100%; padding: 13px 14px; border: 1px solid #d9c9b8; border-radius: 5px; background: #fff; color: var(--text); font: inherit; font-size: 14px; }
+    .form-field input:focus, .form-field select:focus, .form-field textarea:focus { outline: 2px solid var(--gold); border-color: var(--gold); }
+    .form-field textarea { min-height: 105px; resize: vertical; }
+    .form-note { margin-top: 14px; color: var(--muted); font-size: 12px; }
+    .booking-form .btn { grid-column: 1 / -1; justify-self: start; }
+    .map-embed { margin-top: 24px; overflow: hidden; border-radius: 8px; border: 1px solid var(--light-gold); }
+    .map-embed iframe { display: block; width: 100%; height: 300px; border: 0; }
+    .privacy-note { margin-top: 14px; color: var(--muted); font-size: 11px; }
+    @media (max-width: 600px) {
+      .capacity-grid, .booking-form { grid-template-columns: 1fr; }
+      .form-field.full, .booking-form .btn { grid-column: auto; }
+      .booking-form .btn { width: 100%; }
+      .map-embed iframe { height: 250px; }
+    }
+
   </style>
 </head>
 
@@ -1032,6 +1093,22 @@
         <span data-i18n="highlight4b">Mahabubnagar Location</span>
       </div>
 
+    </div>
+  </section>
+
+
+
+  <!-- VENUE CAPACITY -->
+  <section class="capacity-section" aria-label="Venue capacity">
+    <div class="container capacity-grid">
+      <div class="capacity-card">
+        <strong>500</strong>
+        <span data-i18n="seatingCapacity">Seating Capacity</span>
+      </div>
+      <div class="capacity-card">
+        <strong>200+</strong>
+        <span data-i18n="diningCapacity">Dining Capacity Per Round</span>
+      </div>
     </div>
   </section>
 
@@ -1313,6 +1390,68 @@
     </div>
   </section>
 
+
+
+  <!-- ONLINE BOOKING ENQUIRY -->
+  <section class="booking-form-section" id="online-booking">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow" data-i18n="formEyebrow">Start Your Booking Enquiry</span>
+        <h2 data-i18n="formTitle">Online Booking Enquiry</h2>
+        <p data-i18n="formIntro">Share your event details. Your enquiry will open in WhatsApp addressed to Sreekanth.</p>
+      </div>
+
+      <div class="booking-form-wrap">
+        <form class="booking-form" id="bookingEnquiryForm">
+          <div class="form-field">
+            <label for="customerName" data-i18n="formName">Your Full Name *</label>
+            <input id="customerName" name="customerName" type="text" autocomplete="name" required maxlength="80" placeholder="Enter your full name">
+          </div>
+          <div class="form-field">
+            <label for="customerPhone" data-i18n="formPhone">Your Mobile Number *</label>
+            <input id="customerPhone" name="customerPhone" type="tel" autocomplete="tel" required inputmode="tel" pattern="[+0-9() -]{10,18}" maxlength="18" placeholder="Enter your mobile number">
+          </div>
+          <div class="form-field">
+            <label for="eventType" data-i18n="formEvent">Event Type *</label>
+            <select id="eventType" name="eventType" required>
+              <option value="" data-i18n="formChooseEvent">Select event type</option>
+              <option>Wedding / Marriage</option>
+              <option>Reception</option>
+              <option>Engagement</option>
+              <option>Birthday</option>
+              <option>Family Function</option>
+              <option>Traditional Ceremony</option>
+              <option>Corporate Event / Meeting</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="eventDate" data-i18n="formDate">Preferred Event Date *</label>
+            <input id="eventDate" name="eventDate" type="date" required>
+          </div>
+          <div class="form-field">
+            <label for="guestCount" data-i18n="formGuests">Expected Number of Guests *</label>
+            <input id="guestCount" name="guestCount" type="number" min="1" max="5000" required placeholder="Approximate guest count">
+          </div>
+          <div class="form-field">
+            <label for="contactPreference" data-i18n="formContactPreference">Preferred Contact Method</label>
+            <select id="contactPreference" name="contactPreference">
+              <option value="WhatsApp">WhatsApp</option>
+              <option value="Phone call">Phone call</option>
+              <option value="Either">Either</option>
+            </select>
+          </div>
+          <div class="form-field full">
+            <label for="requirements" data-i18n="formRequirements">Additional Requirements</label>
+            <textarea id="requirements" name="requirements" maxlength="1000" placeholder="Tell us about dining, decoration or other requirements (optional)"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit" data-i18n="formSubmit">Send Enquiry to Sreekanth on WhatsApp →</button>
+        </form>
+        <p class="form-note" data-i18n="formNote">When you submit, WhatsApp will open with your enquiry details filled in. Please review the message and tap Send. Your enquiry is not sent or stored until you send it in WhatsApp.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <section class="section" id="contact">
     <div class="container">
@@ -1366,6 +1505,17 @@
             data-i18n="mapButton">
             📍 Get Directions on Google Maps →
           </a>
+
+          <div class="map-embed">
+            <iframe
+              title="AVS Convention Hall A/C location map"
+              src="https://www.google.com/maps?q=AVS%20Convention%20Hall%2C%20Srinivasa%20Colony%2C%20Mahabubnagar%2C%20Telangana&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <p class="privacy-note" data-i18n="mapNote">Map preview uses a Google Maps place search. Use Get Directions to open the location link supplied by the venue.</p>
 
           <br>
 
@@ -1477,6 +1627,8 @@
         </div>
 
       </div>
+
+      <p class="privacy-note" data-i18n="privacyNote">Booking details are shared with Sreekanth only when you choose to send the WhatsApp enquiry. This website does not store form submissions.</p>
 
       <div class="copyright">
         © <span id="year"></span> AVS CONVENTION HALL A/C.
@@ -1612,6 +1764,23 @@
         footerCallTitle: "Call Us",
         footerMap: "Google Maps →",
         footerInstagram: "Instagram →",
+        seatingCapacity: "Seating Capacity",
+        diningCapacity: "Dining Capacity Per Round",
+        formEyebrow: "Start Your Booking Enquiry",
+        formTitle: "Online Booking Enquiry",
+        formIntro: "Share your event details. Your enquiry will open in WhatsApp addressed to Sreekanth.",
+        formName: "Your Full Name *",
+        formPhone: "Your Mobile Number *",
+        formEvent: "Event Type *",
+        formChooseEvent: "Select event type",
+        formDate: "Preferred Event Date *",
+        formGuests: "Expected Number of Guests *",
+        formContactPreference: "Preferred Contact Method",
+        formRequirements: "Additional Requirements",
+        formSubmit: "Send Enquiry to Sreekanth on WhatsApp →",
+        formNote: "When you submit, WhatsApp will open with your enquiry details filled in. Please review the message and tap Send. Your enquiry is not sent or stored until you send it in WhatsApp.",
+        mapNote: "Map preview uses a Google Maps place search. Use Get Directions to open the location link supplied by the venue.",
+        privacyNote: "Booking details are shared with Sreekanth only when you choose to send the WhatsApp enquiry. This website does not store form submissions.",
         copyright: "All Rights Reserved."
       },
 
@@ -1728,6 +1897,23 @@
         footerCallTitle: "మాకు కాల్ చేయండి",
         footerMap: "గూగుల్ మ్యాప్స్ →",
         footerInstagram: "ఇన్‌స్టాగ్రామ్ →",
+        seatingCapacity: "కూర్చునే సామర్థ్యం",
+        diningCapacity: "ప్రతి విడతలో భోజన సామర్థ్యం",
+        formEyebrow: "బుకింగ్ వివరాలు పంపండి",
+        formTitle: "ఆన్‌లైన్ బుకింగ్ విచారణ",
+        formIntro: "మీ కార్యక్రమ వివరాలను నమోదు చేయండి. మీ విచారణ సందేశం శ్రీకాంత్‌కు వాట్సాప్‌లో తెరుచుకుంటుంది.",
+        formName: "మీ పూర్తి పేరు *",
+        formPhone: "మీ మొబైల్ నంబర్ *",
+        formEvent: "కార్యక్రమం రకం *",
+        formChooseEvent: "కార్యక్రమాన్ని ఎంచుకోండి",
+        formDate: "కార్యక్రమానికి కావలసిన తేదీ *",
+        formGuests: "అంచనా అతిథుల సంఖ్య *",
+        formContactPreference: "మీకు ఇష్టమైన సంప్రదింపు విధానం",
+        formRequirements: "అదనపు అవసరాలు",
+        formSubmit: "శ్రీకాంత్‌కు వాట్సాప్ ద్వారా విచారణ పంపండి →",
+        formNote: "సబ్మిట్ చేసినప్పుడు మీ వివరాలతో వాట్సాప్ తెరుచుకుంటుంది. సందేశాన్ని పరిశీలించి Send నొక్కండి. వాట్సాప్‌లో మీరు పంపే వరకు విచారణ పంపబడదు లేదా ఈ వెబ్‌సైట్‌లో నిల్వ చేయబడదు.",
+        mapNote: "మ్యాప్ ప్రివ్యూ గూగుల్ మ్యాప్స్‌లో స్థలం శోధన ఆధారంగా చూపబడుతుంది. ఖచ్చితమైన దారి కోసం Get Directions నొక్కండి.",
+        privacyNote: "మీరు వాట్సాప్‌లో పంపాలని ఎంచుకున్నప్పుడు మాత్రమే బుకింగ్ వివరాలు శ్రీకాంత్‌కు చేరతాయి. ఈ వెబ్‌సైట్ ఫారమ్ వివరాలను నిల్వ చేయదు.",
         copyright: "సర్వ హక్కులు ప్రత్యేకించబడ్డాయి."
       }
     };
@@ -1782,6 +1968,54 @@
         menuToggle.setAttribute("aria-expanded", "false");
         menuToggle.textContent = "☰";
       });
+    });
+
+
+    // Booking enquiry: prepare a WhatsApp message for Sreekanth.
+    // The visitor must review and press Send in WhatsApp; this page does not store submissions.
+    const bookingForm = document.getElementById("bookingEnquiryForm");
+    const eventDateInput = document.getElementById("eventDate");
+    if (eventDateInput) {
+      const today = new Date();
+      const localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60000)
+        .toISOString().split("T")[0];
+      eventDateInput.min = localToday;
+    }
+
+    bookingForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+      if (!bookingForm.reportValidity()) return;
+
+      const formData = new FormData(bookingForm);
+      const language = document.documentElement.lang === "te" ? "te" : "en";
+      const labels = language === "te" ? {
+        heading: "AVS కన్వెన్షన్ హాల్ A/C - బుకింగ్ విచారణ",
+        name: "పేరు", phone: "మొబైల్ నంబర్", type: "కార్యక్రమం",
+        date: "తేదీ", guests: "అతిథుల సంఖ్య", contact: "సంప్రదింపు విధానం",
+        requirements: "అదనపు అవసరాలు"
+      } : {
+        heading: "AVS CONVENTION HALL A/C - BOOKING ENQUIRY",
+        name: "Customer name", phone: "Customer mobile number",
+        type: "Event type", date: "Preferred event date",
+        guests: "Expected guests", contact: "Preferred contact method",
+        requirements: "Additional requirements"
+      };
+
+      const details = [
+        labels.heading,
+        "",
+        labels.name + ": " + formData.get("customerName"),
+        labels.phone + ": " + formData.get("customerPhone"),
+        labels.type + ": " + formData.get("eventType"),
+        labels.date + ": " + formData.get("eventDate"),
+        labels.guests + ": " + formData.get("guestCount"),
+        labels.contact + ": " + formData.get("contactPreference"),
+        labels.requirements + ": " + (formData.get("requirements").trim() || "Not specified")
+      ];
+
+      const whatsappUrl = "https://wa.me/919491491719?text=" +
+        encodeURIComponent(details.join("\n"));
+      window.open(whatsappUrl, "_blank", "noopener,noreferrer");
     });
 
     // Automatically update copyright year
