@@ -1,0 +1,966 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AVS Convention Hall | Weddings, Parties & Celebrations</title>
+  <meta name="description" content="Celebrate your special occasions at AVS Convention Hall. A welcoming venue for weddings, birthday parties, family functions and special celebrations. Contact us for enquiries.">
+  <meta name="keywords" content="AVS Convention Hall, convention hall, wedding hall, birthday parties, family functions, celebrations">
+  <meta name="author" content="AVS Convention Hall">
+  <meta name="theme-color" content="#641d30">
+  <meta property="og:title" content="AVS Convention Hall — Make Your Special Occasions Memorable!">
+  <meta property="og:description" content="Celebrate weddings, birthdays, family functions and special occasions at AVS Convention Hall.">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --maroon: #641d30;
+      --dark-maroon: #3c101f;
+      --gold: #c99b45;
+      --light-gold: #f1d99e;
+      --cream: #fff8ed;
+      --white: #ffffff;
+      --text: #38252a;
+      --muted: #76656a;
+      --shadow: 0 12px 35px rgba(60, 16, 31, 0.12);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background: var(--cream);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .container {
+      width: min(1150px, 90%);
+      margin: auto;
+    }
+
+    /* Navigation */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(60, 16, 31, 0.98);
+      box-shadow: 0 3px 15px rgba(0,0,0,.15);
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      color: var(--white);
+      font-family: Georgia, serif;
+      font-size: 27px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: var(--light-gold);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color .25s;
+    }
+
+    .nav-links a:hover {
+      color: var(--light-gold);
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 1px solid var(--light-gold);
+      background: transparent;
+      color: white;
+      padding: 7px 12px;
+      border-radius: 6px;
+      font-size: 23px;
+      cursor: pointer;
+    }
+
+    /* Hero */
+
+    .hero {
+      min-height: 660px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(90deg, rgba(35,10,20,.88), rgba(35,10,20,.46)),
+        url("https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=2000&q=85")
+        center/cover no-repeat;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 730px;
+      padding: 90px 0;
+      animation: fadeUp .9s ease both;
+    }
+
+    .eyebrow {
+      color: var(--light-gold);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.15;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: var(--light-gold);
+    }
+
+    .hero p {
+      max-width: 610px;
+      color: #f6eeee;
+      font-size: 18px;
+      margin-bottom: 32px;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 49px;
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: transform .25s, background .25s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: var(--dark-maroon);
+    }
+
+    .btn-outline {
+      border: 2px solid var(--light-gold);
+      color: white;
+    }
+
+    /* General sections */
+
+    section {
+      padding: 85px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 45px;
+    }
+
+    .section-heading .eyebrow {
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .section-heading h2 {
+      font-family: Georgia, serif;
+      color: var(--maroon);
+      font-size: clamp(30px, 4vw, 43px);
+      line-height: 1.25;
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    /* Welcome */
+
+    .welcome {
+      background: var(--white);
+    }
+
+    .welcome-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .welcome-image {
+      height: 430px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+
+    .welcome-content h2 {
+      font-family: Georgia, serif;
+      color: var(--maroon);
+      font-size: 38px;
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+
+    .welcome-content p {
+      color: var(--muted);
+      margin-bottom: 17px;
+    }
+
+    .gold-line {
+      width: 75px;
+      height: 4px;
+      background: var(--gold);
+      margin: 20px 0;
+    }
+
+    /* Occasions */
+
+    .occasions {
+      background: var(--cream);
+    }
+
+    .occasion-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 27px;
+    }
+
+    .occasion-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform .3s;
+    }
+
+    .occasion-card:hover {
+      transform: translateY(-7px);
+    }
+
+    .occasion-card img {
+      height: 260px;
+      transition: transform .5s;
+    }
+
+    .occasion-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .occasion-card .card-content {
+      padding: 25px;
+    }
+
+    .occasion-card h3 {
+      font-family: Georgia, serif;
+      font-size: 25px;
+      color: var(--maroon);
+      margin-bottom: 10px;
+    }
+
+    .occasion-card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* Highlight banner */
+
+    .highlight {
+      background: var(--maroon);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .highlight h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(29px, 4vw, 42px);
+      margin-bottom: 15px;
+    }
+
+    .highlight p {
+      color: #f5e7e7;
+      max-width: 700px;
+      margin: 0 auto 27px;
+    }
+
+    /* Contact */
+
+    .contact {
+      background: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .contact-card {
+      border: 1px solid #eadcc9;
+      background: var(--cream);
+      padding: 30px 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-icon {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 17px;
+      background: var(--maroon);
+      color: var(--light-gold);
+      font-size: 27px;
+    }
+
+    .contact-card h3 {
+      font-family: Georgia, serif;
+      color: var(--maroon);
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+
+    .phone-number {
+      color: var(--muted);
+      font-size: 17px;
+      font-weight: 600;
+      margin: 12px 0 20px;
+    }
+
+    .contact-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .contact-actions .btn {
+      padding: 11px 17px;
+      min-height: 46px;
+    }
+
+    .btn-call {
+      background: var(--maroon);
+      color: white;
+    }
+
+    .btn-whatsapp {
+      background: #168d54;
+      color: white;
+    }
+
+    .instagram-area {
+      margin: 45px auto 0;
+      max-width: 650px;
+      background: var(--cream);
+      border: 1px solid #eadcc9;
+      padding: 28px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .instagram-area h3 {
+      color: var(--maroon);
+      font-family: Georgia, serif;
+      font-size: 25px;
+      margin-bottom: 9px;
+    }
+
+    .instagram-area p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .btn-instagram {
+      background: #a52b61;
+      color: white;
+    }
+
+    /* Footer */
+
+    footer {
+      background: var(--dark-maroon);
+      color: #f5e9e9;
+      padding: 35px 0;
+      text-align: center;
+    }
+
+    footer .footer-logo {
+      color: var(--light-gold);
+      font-family: Georgia, serif;
+      font-size: 27px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      font-size: 14px;
+      color: #dfcfd2;
+      margin: 5px 0;
+    }
+
+    footer a {
+      color: var(--light-gold);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.15);
+      margin-top: 22px;
+      padding-top: 18px;
+      font-size: 12px;
+    }
+
+    /* Floating WhatsApp */
+
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 22px;
+      right: 20px;
+      z-index: 900;
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #168d54;
+      color: white;
+      font-size: 29px;
+      box-shadow: 0 5px 18px rgba(0,0,0,.25);
+    }
+
+    /* Animations */
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Mobile responsive */
+
+    @media (max-width: 800px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        background: var(--dark-maroon);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px 5% 20px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 12px 0;
+      }
+
+      .hero {
+        min-height: 590px;
+        background-position: 60% center;
+      }
+
+      .welcome-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .welcome-image {
+        height: 320px;
+      }
+
+      .occasion-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        font-size: 23px;
+      }
+
+      .hero h1 {
+        font-size: 39px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .btn-group {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn-group .btn {
+        width: 100%;
+      }
+
+      .occasion-card img {
+        height: 220px;
+      }
+
+      .contact-actions {
+        flex-direction: column;
+      }
+
+      .contact-actions .btn {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container navbar">
+      <a href="#home" class="logo">AVS <span>Convention Hall</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navLinks">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#occasions">Celebrations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="eyebrow">Celebrate Every Beautiful Moment</div>
+
+          <h1>AVS Convention Hall —
+            <span>Make Your Special Occasions Memorable!</span>
+          </h1>
+
+          <p>
+            Every celebration deserves a special place.
+            Make your weddings, birthdays, family functions
+            and unforgettable occasions truly memorable with AVS Convention Hall.
+          </p>
+
+          <div class="btn-group">
+            <a href="#contact" class="btn btn-gold">Enquire Now</a>
+            <a href="#occasions" class="btn btn-outline">Explore Celebrations</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Welcome -->
+    <section class="welcome" id="about">
+      <div class="container welcome-grid reveal">
+
+        <img class="welcome-image"
+          src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=80"
+          alt="Elegant convention hall decorated for a celebration"
+          loading="lazy">
+
+        <div class="welcome-content">
+          <div class="eyebrow">Welcome to AVS</div>
+
+          <h2>A Beautiful Place for Your Beautiful Moments</h2>
+
+          <div class="gold-line"></div>
+
+          <p>
+            Some moments deserve to be celebrated forever.
+            AVS Convention Hall welcomes you to celebrate
+            life's most meaningful occasions with your loved ones.
+          </p>
+
+          <p>
+            From wedding celebrations and birthday parties
+            to family gatherings and special events,
+            let your celebrations become treasured memories.
+          </p>
+
+          <a href="#contact" class="btn btn-gold">Contact Us</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Celebrations -->
+    <section class="occasions" id="occasions">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div class="eyebrow">Our Celebrations</div>
+          <h2>Celebrate Every Occasion With Us</h2>
+          <p>
+            Whatever the occasion, make it special.
+            Bring your family and friends together
+            to celebrate your happiest moments.
+          </p>
+        </div>
+
+        <div class="occasion-grid">
+
+          <article class="occasion-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80"
+              alt="Beautiful wedding celebration"
+              loading="lazy">
+            <div class="card-content">
+              <h3>Wedding Celebrations</h3>
+              <p>
+                Celebrate the beginning of a beautiful journey.
+                Make your wedding day a cherished memory
+                surrounded by family and friends.
+              </p>
+            </div>
+          </article>
+
+          <article class="occasion-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=900&q=80"
+              alt="Colorful birthday party decorations"
+              loading="lazy">
+            <div class="card-content">
+              <h3>Birthday Parties</h3>
+              <p>
+                Celebrate another year of happiness with
+                colorful decorations, laughter, family
+                and unforgettable birthday moments.
+              </p>
+            </div>
+          </article>
+
+          <article class="occasion-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80"
+              alt="Elegant family celebration and gathering"
+              loading="lazy">
+            <div class="card-content">
+              <h3>Family Functions</h3>
+              <p>
+                Bring generations together for joyful
+                family gatherings, anniversaries,
+                engagements and traditional celebrations.
+              </p>
+            </div>
+          </article>
+
+          <article class="occasion-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=80"
+              alt="Beautifully arranged special event"
+              loading="lazy">
+            <div class="card-content">
+              <h3>Special Events</h3>
+              <p>
+                Make every important milestone memorable.
+                Celebrate your special occasions
+                with the people who matter most.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Promotional banner -->
+    <section class="highlight">
+      <div class="container reveal">
+        <div class="eyebrow">Your Celebration Starts Here</div>
+        <h2>Every Moment Deserves a Beautiful Celebration</h2>
+        <p>
+          Planning a wedding, birthday party or family function?
+          Get in touch with AVS Convention Hall
+          and enquire about your upcoming celebration.
+        </p>
+        <a href="#contact" class="btn btn-gold">Talk to Our Team</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div class="eyebrow">Get in Touch</div>
+          <h2>Let's Plan Your Special Occasion</h2>
+          <p>
+            Have an enquiry or planning an upcoming celebration?
+            Contact our team by phone or WhatsApp.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Naveen Kumar -->
+          <article class="contact-card reveal">
+            <div class="contact-icon" aria-hidden="true">☎</div>
+
+            <h3>Naveen Kumar</h3>
+            <p class="phone-number">+91 90008 65070</p>
+
+            <div class="contact-actions">
+              <a class="btn btn-call"
+                href="tel:+919000865070"
+                aria-label="Call Naveen Kumar">
+                ☎ Call Now
+              </a>
+
+              <a class="btn btn-whatsapp"
+                href="https://wa.me/919000865070?text=Hello%20Naveen%20Kumar%2C%20I%20would%20like%20to%20enquire%20about%20AVS%20Convention%20Hall."
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp Naveen Kumar">
+                WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <!-- Sreekanth -->
+          <article class="contact-card reveal">
+            <div class="contact-icon" aria-hidden="true">☎</div>
+
+            <h3>Sreekanth</h3>
+            <p class="phone-number">+91 94914 91719</p>
+
+            <div class="contact-actions">
+              <a class="btn btn-call"
+                href="tel:+919491491719"
+                aria-label="Call Sreekanth">
+                ☎ Call Now
+              </a>
+
+              <a class="btn btn-whatsapp"
+                href="https://wa.me/919491491719?text=Hello%20Sreekanth%2C%20I%20would%20like%20to%20enquire%20about%20AVS%20Convention%20Hall."
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp Sreekanth">
+                WhatsApp
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Instagram -->
+        <div class="instagram-area reveal">
+          <h3>Follow AVS Convention Hall on Instagram</h3>
+          <p>
+            Explore our Instagram account and stay connected
+            with AVS Convention Hall.
+          </p>
+
+          <a class="btn btn-instagram"
+            href="https://www.instagram.com/avs_convention_ac_hall/"
+            target="_blank"
+            rel="noopener noreferrer">
+            Follow Us on Instagram
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">AVS Convention Hall</div>
+
+      <p>Make Your Special Occasions Memorable!</p>
+      <p>Weddings | Birthday Parties | Family Functions | Special Events</p>
+
+      <p>
+        Enquiries:
+        <a href="tel:+919000865070">+91 90008 65070</a>
+        |
+        <a href="tel:+919491491719">+91 94914 91719</a>
+      </p>
+
+      <div class="footer-bottom">
+        &copy; <span id="year">2026</span> AVS Convention Hall.
+        All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="floating-whatsapp"
+    href="https://wa.me/919000865070?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20AVS%20Convention%20Hall."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Enquire through WhatsApp">
+    ☎
+  </a>
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("active");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+      menuToggle.textContent = isOpen ? "✕" : "☰";
+    });
+
+    // Close menu after selecting a section
+    document.querySelectorAll(".nav-links a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navLinks.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+        menuToggle.textContent = "☰";
+      });
+    });
+
+    // Reveal animations
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      revealElements.forEach(function (element) {
+        observer.observe(element);
+      });
+    } else {
+      revealElements.forEach(function (element) {
+        element.classList.add("visible");
+      });
+    }
+
+    // Automatic copyright year
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
