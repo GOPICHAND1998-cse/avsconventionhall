@@ -1,4 +1,4 @@
-
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>AVS Convention Hall A/C | Mahabubnagar</title>
-  <meta name="description" content="AVS Convention Hall A/C, Srinivasa Colony, Mahabubnagar. Contact us for wedding, reception and family function bookings.">
+  <meta name="description" content="AVS Convention Hall A/C, Srinivasa Colony, Mahabubnagar. Wedding, reception and family function bookings.">
   <meta name="keywords" content="AVS Convention Hall, AVS Convention Hall AC, function hall Mahabubnagar, marriage hall Mahabubnagar">
   <meta name="theme-color" content="#641b25">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -39,10 +39,14 @@
     }
 
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Poppins', 'Noto Sans Telugu', sans-serif;
       color: var(--text);
       background: var(--cream);
       line-height: 1.7;
+    }
+
+    body.telugu {
+      font-family: 'Noto Sans Telugu', 'Poppins', sans-serif;
     }
 
     a {
@@ -74,15 +78,31 @@
       margin-bottom: 10px;
     }
 
+    body.telugu .eyebrow {
+      letter-spacing: 0;
+    }
+
     .section-heading h2 {
       color: var(--maroon);
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(36px, 5vw, 52px);
-      line-height: 1.15;
+      font-family: 'Cormorant Garamond', 'Noto Sans Telugu', serif;
+      font-size: clamp(34px, 5vw, 52px);
+      line-height: 1.3;
+    }
+
+    body.telugu .section-heading h2,
+    body.telugu .about-content h2,
+    body.telugu .hero h1,
+    body.telugu .booking-banner h2,
+    body.telugu .event-card h3,
+    body.telugu .facility-card h3,
+    body.telugu .contact-card h3,
+    body.telugu .contact-info h3,
+    body.telugu .footer-grid h3 {
+      font-family: 'Noto Sans Telugu', sans-serif;
     }
 
     .section-heading p {
-      max-width: 650px;
+      max-width: 700px;
       margin: 12px auto 0;
       color: var(--muted);
       font-size: 14px;
@@ -138,13 +158,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 20px;
+      gap: 15px;
     }
 
     .logo {
       display: flex;
       align-items: center;
       gap: 12px;
+      flex-shrink: 0;
     }
 
     .logo-mark {
@@ -158,15 +179,14 @@
       font-size: 23px;
       font-weight: 700;
       border-radius: 50%;
-      flex-shrink: 0;
     }
 
     .logo-text strong {
       display: block;
       color: var(--light-gold);
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(19px, 3vw, 28px);
-      line-height: 1.1;
+      font-size: clamp(17px, 2vw, 26px);
+      line-height: 1.2;
       letter-spacing: 1px;
     }
 
@@ -181,7 +201,7 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 23px;
+      gap: 18px;
       list-style: none;
     }
 
@@ -199,9 +219,31 @@
     .nav-book {
       background: var(--gold);
       color: var(--dark-maroon) !important;
-      padding: 10px 17px;
+      padding: 10px 15px;
       border-radius: 3px;
       font-weight: 700 !important;
+    }
+
+    .language-switch {
+      display: flex;
+      gap: 5px;
+      flex-shrink: 0;
+    }
+
+    .language-switch button {
+      border: 1px solid var(--gold);
+      background: transparent;
+      color: white;
+      padding: 8px 11px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .language-switch button.active {
+      background: var(--gold);
+      color: var(--dark-maroon);
     }
 
     .menu-toggle {
@@ -226,22 +268,19 @@
     .ticker-track {
       display: inline-flex;
       align-items: center;
-      gap: 55px;
+      gap: 45px;
       min-width: max-content;
-      animation: ticker 28s linear infinite;
+      animation: ticker 30s linear infinite;
     }
 
     .ticker-track:hover {
       animation-play-state: paused;
     }
 
-    .ticker-track a {
+    .ticker-track a,
+    .ticker-track span {
       font-size: 13px;
       font-weight: 700;
-    }
-
-    .ticker-track a:hover {
-      text-decoration: underline;
     }
 
     @keyframes ticker {
@@ -255,7 +294,6 @@
       min-height: 620px;
       display: flex;
       align-items: center;
-      position: relative;
       color: white;
       background:
         linear-gradient(90deg, rgba(34,10,15,0.88), rgba(34,10,15,0.36)),
@@ -279,8 +317,8 @@
 
     .hero h1 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(48px, 7vw, 82px);
-      line-height: 1.02;
+      font-size: clamp(45px, 7vw, 82px);
+      line-height: 1.2;
       margin-bottom: 22px;
     }
 
@@ -374,7 +412,7 @@
       font-family: 'Cormorant Garamond', serif;
       color: var(--maroon);
       font-size: 46px;
-      line-height: 1.1;
+      line-height: 1.3;
       margin-bottom: 20px;
     }
 
@@ -434,7 +472,7 @@
       color: var(--maroon);
       font-family: 'Cormorant Garamond', serif;
       font-size: 22px;
-      line-height: 1.2;
+      line-height: 1.4;
     }
 
     /* FACILITIES */
@@ -515,10 +553,11 @@
       align-items: start;
     }
 
-    .contact-info h3 {
+    .contact-info h3,
+    .contact-card h3 {
       color: var(--maroon);
       font-family: 'Cormorant Garamond', serif;
-      font-size: 29px;
+      font-size: 27px;
       margin-bottom: 14px;
     }
 
@@ -578,13 +617,6 @@
       box-shadow: 0 5px 20px rgba(0,0,0,0.05);
     }
 
-    .contact-card h3 {
-      color: var(--maroon);
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 25px;
-      margin-bottom: 12px;
-    }
-
     .contact-card p {
       font-size: 12px;
       color: var(--muted);
@@ -605,10 +637,6 @@
       color: var(--dark-maroon);
       margin: 8px 0 17px;
       white-space: nowrap;
-    }
-
-    .phone-number:hover {
-      color: #168b50;
     }
 
     .contact-actions {
@@ -735,9 +763,9 @@
 
     /* RESPONSIVE */
 
-    @media (max-width: 900px) {
+    @media (max-width: 1000px) {
       .nav-links {
-        gap: 13px;
+        gap: 11px;
       }
 
       .nav-links a {
@@ -751,15 +779,16 @@
       .facilities-grid {
         grid-template-columns: repeat(2, 1fr);
       }
-
-      .about-grid {
-        gap: 30px;
-      }
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 760px) {
       .navbar {
-        min-height: 70px;
+        min-height: 72px;
+        flex-wrap: wrap;
+      }
+
+      .logo-text strong {
+        font-size: 18px;
       }
 
       .menu-toggle {
@@ -771,7 +800,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        top: 70px;
+        top: 72px;
         padding: 18px 5%;
         background: var(--dark-maroon);
         flex-direction: column;
@@ -800,8 +829,12 @@
         text-align: center;
       }
 
+      .language-switch {
+        margin-left: auto;
+      }
+
       .hero {
-        min-height: 550px;
+        min-height: 540px;
         background-position: 60% center;
       }
 
@@ -836,7 +869,7 @@
       }
 
       .about-content h2 {
-        font-size: 39px;
+        font-size: 36px;
       }
 
       .events-grid {
@@ -849,7 +882,7 @@
       }
 
       .event-card h3 {
-        font-size: 18px;
+        font-size: 17px;
         padding: 12px;
       }
 
@@ -870,13 +903,9 @@
         grid-template-columns: 1fr;
         gap: 22px;
       }
-
-      .ticker-track {
-        gap: 35px;
-      }
     }
 
-    @media (max-width: 380px) {
+    @media (max-width: 390px) {
       .events-grid {
         grid-template-columns: 1fr;
       }
@@ -890,7 +919,12 @@
       }
 
       .logo-text strong {
-        font-size: 18px;
+        font-size: 16px;
+      }
+
+      .language-switch button {
+        padding: 7px 8px;
+        font-size: 11px;
       }
     }
   </style>
@@ -906,9 +940,14 @@
         <div class="logo-mark">AVS</div>
         <div class="logo-text">
           <strong>AVS CONVENTION HALL A/C</strong>
-          <small>CELEBRATE EVERY MOMENT</small>
+          <small data-i18n="tagline">CELEBRATE EVERY MOMENT</small>
         </div>
       </a>
+
+      <div class="language-switch" aria-label="Choose website language">
+        <button type="button" id="englishBtn" class="active" onclick="setLanguage('en')">English</button>
+        <button type="button" id="teluguBtn" onclick="setLanguage('te')">తెలుగు</button>
+      </div>
 
       <button class="menu-toggle" id="menuToggle"
         aria-label="Open navigation menu" aria-expanded="false">
@@ -916,12 +955,12 @@
       </button>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#facilities">Facilities</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a class="nav-book" href="#contact">Book Now</a></li>
+        <li><a href="#home" data-i18n="navHome">Home</a></li>
+        <li><a href="#about" data-i18n="navAbout">About</a></li>
+        <li><a href="#events" data-i18n="navEvents">Events</a></li>
+        <li><a href="#facilities" data-i18n="navFacilities">Facilities</a></li>
+        <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+        <li><a class="nav-book" href="#contact" data-i18n="navBook">Book Now</a></li>
       </ul>
 
     </div>
@@ -930,17 +969,15 @@
   <!-- SCROLLING CONTACT NUMBERS -->
   <div class="contact-ticker">
     <div class="ticker-track">
-
-      <span>📞 CALL FOR BOOKINGS:</span>
+      <span data-i18n="tickerTitle">📞 CALL FOR BOOKINGS:</span>
       <a href="tel:+919000865070">Naveen Kumar: +91 90008 65070</a>
       <a href="tel:+919491491719">Sreekanth: +91 94914 91719</a>
-      <span>📍 MAHABUBNAGAR, TELANGANA</span>
+      <span data-i18n="tickerLocation">📍 MAHABUBNAGAR, TELANGANA</span>
 
-      <span>📞 CALL FOR BOOKINGS:</span>
+      <span data-i18n="tickerTitle">📞 CALL FOR BOOKINGS:</span>
       <a href="tel:+919000865070">Naveen Kumar: +91 90008 65070</a>
       <a href="tel:+919491491719">Sreekanth: +91 94914 91719</a>
-      <span>📍 MAHABUBNAGAR, TELANGANA</span>
-
+      <span data-i18n="tickerLocation">📍 MAHABUBNAGAR, TELANGANA</span>
     </div>
   </div>
 
@@ -949,22 +986,22 @@
     <div class="container">
       <div class="hero-content">
 
-        <div class="hero-tag">A BEAUTIFUL PLACE FOR BEAUTIFUL MOMENTS</div>
+        <div class="hero-tag" data-i18n="heroTag">A BEAUTIFUL PLACE FOR BEAUTIFUL MOMENTS</div>
 
         <h1>
-          Your Special Moments,<br>
-          <span>Our Perfect Venue</span>
+          <span data-i18n="heroTitle1">Your Special Moments,</span><br>
+          <span data-i18n="heroTitle2">Our Perfect Venue</span>
         </h1>
 
-        <p>
+        <p data-i18n="heroDescription">
           Make your celebrations memorable at AVS Convention Hall A/C.
           A welcoming venue for weddings, traditional ceremonies,
           family celebrations and special occasions in Mahabubnagar.
         </p>
 
         <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">Enquire for Booking →</a>
-          <a href="#events" class="btn btn-outline">Explore Events</a>
+          <a href="#contact" class="btn btn-primary" data-i18n="heroButton1">Enquire for Booking →</a>
+          <a href="#events" class="btn btn-outline" data-i18n="heroButton2">Explore Events</a>
         </div>
 
       </div>
@@ -977,22 +1014,22 @@
 
       <div class="highlight-item">
         <strong>A/C</strong>
-        <span>Convention Hall</span>
+        <span data-i18n="highlight1">Convention Hall</span>
       </div>
 
       <div class="highlight-item">
-        <strong>Elegant</strong>
-        <span>Celebration Space</span>
+        <strong data-i18n="highlight2a">Elegant</strong>
+        <span data-i18n="highlight2b">Celebration Space</span>
       </div>
 
       <div class="highlight-item">
-        <strong>Special</strong>
-        <span>Family Occasions</span>
+        <strong data-i18n="highlight3a">Special</strong>
+        <span data-i18n="highlight3b">Family Occasions</span>
       </div>
 
       <div class="highlight-item">
-        <strong>Convenient</strong>
-        <span>Mahabubnagar Location</span>
+        <strong data-i18n="highlight4a">Convenient</strong>
+        <span data-i18n="highlight4b">Mahabubnagar Location</span>
       </div>
 
     </div>
@@ -1005,31 +1042,31 @@
       <div class="about-image">
         <img
           src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=85"
-          alt="Decorated celebration venue">
+          alt="Illustrative celebration venue image">
       </div>
 
       <div class="about-content">
-        <span class="eyebrow">Welcome to AVS</span>
+        <span class="eyebrow" data-i18n="aboutEyebrow">Welcome to AVS</span>
 
-        <h2>A Venue Where Memories Become Special</h2>
+        <h2 data-i18n="aboutTitle">A Venue Where Memories Become Special</h2>
 
-        <p>
+        <p data-i18n="aboutP1">
           Every celebration deserves a beautiful setting. AVS Convention Hall A/C
           provides a welcoming space for families and guests to come together
           and celebrate life's important occasions.
         </p>
 
-        <p>
+        <p data-i18n="aboutP2">
           From weddings and receptions to birthdays, traditional ceremonies
           and family gatherings, make your special day memorable with us.
         </p>
 
-        <div class="about-note">
+        <div class="about-note" data-i18n="aboutNote">
           Your celebrations matter to us. Contact our team to discuss
           your event requirements and booking details.
         </div>
 
-        <a href="#contact" class="btn btn-primary">Contact Us →</a>
+        <a href="#contact" class="btn btn-primary" data-i18n="aboutButton">Contact Us →</a>
       </div>
 
     </div>
@@ -1040,9 +1077,9 @@
     <div class="container">
 
       <div class="section-heading">
-        <span class="eyebrow">Celebrate Every Occasion</span>
-        <h2>Events & Celebrations</h2>
-        <p>
+        <span class="eyebrow" data-i18n="eventsEyebrow">Celebrate Every Occasion</span>
+        <h2 data-i18n="eventsTitle">Events & Celebrations</h2>
+        <p data-i18n="eventsDescription">
           A venue for memorable occasions, family functions,
           traditional ceremonies and professional gatherings.
         </p>
@@ -1052,147 +1089,147 @@
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Engagement celebration" loading="lazy">
-          <h3>Engagements</h3>
+          <h3 data-i18n="event1">Engagements</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=800&q=80" alt="Wedding celebration" loading="lazy">
-          <h3>Weddings / Marriages</h3>
+          <h3 data-i18n="event2">Weddings / Marriages</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80" alt="Pre wedding celebration" loading="lazy">
-          <h3>Pre-Wedding Celebrations</h3>
+          <h3 data-i18n="event3">Pre-Wedding Celebrations</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=800&q=80" alt="Wedding reception" loading="lazy">
-          <h3>Wedding Receptions</h3>
+          <h3 data-i18n="event4">Wedding Receptions</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80" alt="Post wedding reception" loading="lazy">
-          <h3>Post-Wedding Receptions</h3>
+          <h3 data-i18n="event5">Post-Wedding Receptions</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80" alt="Haldi ceremony" loading="lazy">
-          <h3>Haldi Ceremony</h3>
+          <h3 data-i18n="event6">Haldi Ceremony</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=800&q=80" alt="Mehendi ceremony" loading="lazy">
-          <h3>Mehendi Ceremony</h3>
+          <h3 data-i18n="event7">Mehendi Ceremony</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=800&q=80" alt="Sangeet ceremony" loading="lazy">
-          <h3>Sangeet Ceremony</h3>
+          <h3 data-i18n="event8">Sangeet Ceremony</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Pellikoduku and Pellikuthuru" loading="lazy">
-          <h3>Pellikoduku / Pellikuthuru</h3>
+          <h3 data-i18n="event9">Pellikoduku / Pellikuthuru</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" alt="Wedding anniversary" loading="lazy">
-          <h3>Wedding Anniversaries</h3>
+          <h3 data-i18n="event10">Wedding Anniversaries</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" alt="Half saree function" loading="lazy">
-          <h3>Half Saree Functions</h3>
+          <h3 data-i18n="event11">Half Saree Functions</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Dhoti ceremony" loading="lazy">
-          <h3>Dhoti Ceremony</h3>
+          <h3 data-i18n="event12">Dhoti Ceremony</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=80" alt="Naming ceremony" loading="lazy">
-          <h3>Naming Ceremony</h3>
+          <h3 data-i18n="event13">Naming Ceremony</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80" alt="Annaprashana ceremony" loading="lazy">
-          <h3>Annaprashana</h3>
+          <h3 data-i18n="event14">Annaprashana</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=80" alt="Cradle ceremony" loading="lazy">
-          <h3>Cradle Ceremony</h3>
+          <h3 data-i18n="event15">Cradle Ceremony</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" alt="Shastipurti celebration" loading="lazy">
-          <h3>Shastipurti</h3>
+          <h3 data-i18n="event16">Shastipurti</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80" alt="Seemantham baby shower" loading="lazy">
-          <h3>Seemantham / Baby Shower</h3>
+          <h3 data-i18n="event17">Seemantham / Baby Shower</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" alt="Gruhapravesham celebration" loading="lazy">
-          <h3>Gruhapravesham</h3>
+          <h3 data-i18n="event18">Gruhapravesham</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" alt="Satyanarayana Swamy Vratham" loading="lazy">
-          <h3>Satyanarayana Swamy Vratham</h3>
+          <h3 data-i18n="event19">Satyanarayana Swamy Vratham</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80" alt="Birthday celebration" loading="lazy">
-          <h3>Birthday Celebrations</h3>
+          <h3 data-i18n="event20">Birthday Celebrations</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=800&q=80" alt="First birthday celebration" loading="lazy">
-          <h3>First Birthday</h3>
+          <h3 data-i18n="event21">First Birthday</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" alt="Family gathering" loading="lazy">
-          <h3>Family Gatherings</h3>
+          <h3 data-i18n="event22">Family Gatherings</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" alt="Retirement celebration" loading="lazy">
-          <h3>Retirement Celebrations</h3>
+          <h3 data-i18n="event23">Retirement Celebrations</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80" alt="Felicitations" loading="lazy">
-          <h3>Felicitations</h3>
+          <h3 data-i18n="event24">Felicitations</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80" alt="Business meeting" loading="lazy">
-          <h3>Meetings</h3>
+          <h3 data-i18n="event25">Meetings</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80" alt="Corporate event" loading="lazy">
-          <h3>Corporate Events</h3>
+          <h3 data-i18n="event26">Corporate Events</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80" alt="Conference and seminar" loading="lazy">
-          <h3>Conferences & Seminars</h3>
+          <h3 data-i18n="event27">Conferences & Seminars</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1559223607-a43c990c692c?auto=format&fit=crop&w=800&q=80" alt="Product launch event" loading="lazy">
-          <h3>Product Launches</h3>
+          <h3 data-i18n="event28">Product Launches</h3>
         </article>
 
         <article class="event-card">
           <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80" alt="Award function" loading="lazy">
-          <h3>Award Functions</h3>
+          <h3 data-i18n="event29">Award Functions</h3>
         </article>
 
       </div>
@@ -1204,9 +1241,9 @@
     <div class="container">
 
       <div class="section-heading">
-        <span class="eyebrow">Comfort & Convenience</span>
-        <h2>Our Facilities</h2>
-        <p>
+        <span class="eyebrow" data-i18n="facilitiesEyebrow">Comfort & Convenience</span>
+        <h2 data-i18n="facilitiesTitle">Our Facilities</h2>
+        <p data-i18n="facilitiesDescription">
           Thoughtful facilities to help make your event comfortable
           and convenient for you and your guests.
         </p>
@@ -1216,50 +1253,50 @@
 
         <div class="facility-card">
           <div class="facility-icon">🏛️</div>
-          <h3>Spacious Hall</h3>
-          <p>A welcoming space for your special occasions.</p>
+          <h3 data-i18n="facility1">Spacious Hall</h3>
+          <p data-i18n="facilityDesc1">A welcoming space for your special occasions.</p>
         </div>
 
         <div class="facility-card">
           <div class="facility-icon">❄️</div>
-          <h3>AC Facility</h3>
-          <p>Air-conditioned comfort for your guests.</p>
+          <h3 data-i18n="facility2">AC Facility</h3>
+          <p data-i18n="facilityDesc2">Air-conditioned comfort for your guests.</p>
         </div>
 
         <div class="facility-card">
           <div class="facility-icon">🚗</div>
-          <h3>Ample Parking</h3>
-          <p>Convenient parking arrangements for visitors.</p>
+          <h3 data-i18n="facility3">Ample Parking</h3>
+          <p data-i18n="facilityDesc3">Convenient parking arrangements for visitors.</p>
         </div>
 
         <div class="facility-card">
           <div class="facility-icon">⚡</div>
-          <h3>Power Backup</h3>
-          <p>Backup arrangements for added convenience.</p>
+          <h3 data-i18n="facility4">Power Backup</h3>
+          <p data-i18n="facilityDesc4">Backup arrangements for added convenience.</p>
         </div>
 
         <div class="facility-card">
           <div class="facility-icon">🍽️</div>
-          <h3>Catering Support</h3>
-          <p>Support for your event catering requirements.</p>
+          <h3 data-i18n="facility5">Catering Support</h3>
+          <p data-i18n="facilityDesc5">Support for your event catering requirements.</p>
         </div>
 
         <div class="facility-card">
           <div class="facility-icon">🌸</div>
-          <h3>Decoration</h3>
-          <p>Customizable decoration arrangements.</p>
+          <h3 data-i18n="facility6">Decoration</h3>
+          <p data-i18n="facilityDesc6">Customizable decoration arrangements.</p>
         </div>
 
         <div class="facility-card">
           <div class="facility-icon">📽️</div>
-          <h3>Projector Facility</h3>
-          <p>Presentation and display support for events.</p>
+          <h3 data-i18n="facility7">Projector Facility</h3>
+          <p data-i18n="facilityDesc7">Presentation and display support for events.</p>
         </div>
 
         <div class="facility-card">
           <div class="facility-icon">✨</div>
-          <h3>Clean & Maintained</h3>
-          <p>A clean and well-maintained event space.</p>
+          <h3 data-i18n="facility8">Clean & Maintained</h3>
+          <p data-i18n="facilityDesc8">A clean and well-maintained event space.</p>
         </div>
 
       </div>
@@ -1269,10 +1306,10 @@
   <!-- BOOKING BANNER -->
   <section class="booking-banner">
     <div class="container">
-      <span class="eyebrow">Make Your Occasion Memorable</span>
-      <h2>Planning a Special Celebration?</h2>
-      <p>Get in touch with us to discuss your event and booking requirements.</p>
-      <a href="#contact" class="btn btn-primary">Enquire Now →</a>
+      <span class="eyebrow" data-i18n="bookingEyebrow">Make Your Occasion Memorable</span>
+      <h2 data-i18n="bookingTitle">Planning a Special Celebration?</h2>
+      <p data-i18n="bookingDescription">Get in touch with us to discuss your event and booking requirements.</p>
+      <a href="#contact" class="btn btn-primary" data-i18n="bookingButton">Enquire Now →</a>
     </div>
   </section>
 
@@ -1281,9 +1318,9 @@
     <div class="container">
 
       <div class="section-heading">
-        <span class="eyebrow">We Are Here to Help</span>
-        <h2>Contact & Bookings</h2>
-        <p>
+        <span class="eyebrow" data-i18n="contactEyebrow">We Are Here to Help</span>
+        <h2 data-i18n="contactTitle">Contact & Bookings</h2>
+        <p data-i18n="contactDescription">
           Call us directly for venue enquiries, availability
           and booking information.
         </p>
@@ -1292,9 +1329,9 @@
       <div class="contact-grid">
 
         <div class="contact-info">
-          <h3>Visit AVS Convention Hall A/C</h3>
+          <h3 data-i18n="visitTitle">Visit AVS Convention Hall A/C</h3>
 
-          <p>
+          <p data-i18n="visitDescription">
             Contact our team for booking details and information
             about your upcoming celebration.
           </p>
@@ -1302,8 +1339,8 @@
           <div class="contact-detail">
             <div class="symbol">📍</div>
             <div>
-              <strong>Address</strong>
-              <span>Srinivasa Colony, Mahabubnagar, Telangana, India</span>
+              <strong data-i18n="addressLabel">Address</strong>
+              <span data-i18n="addressText">Srinivasa Colony, Mahabubnagar, Telangana, India</span>
             </div>
           </div>
 
@@ -1311,7 +1348,7 @@
             <div class="symbol">📞</div>
             <div>
               <strong>Naveen Kumar</strong>
-              <a href="tel:+919000865070">+91 90008 65070 — Tap to Call</a>
+              <a href="tel:+919000865070">+91 90008 65070 — <span data-i18n="tapToCall">Tap to Call</span></a>
             </div>
           </div>
 
@@ -1319,25 +1356,23 @@
             <div class="symbol">📞</div>
             <div>
               <strong>Sreekanth</strong>
-              <a href="tel:+919491491719">+91 94914 91719 — Tap to Call</a>
+              <a href="tel:+919491491719">+91 94914 91719 — <span data-i18n="tapToCall">Tap to Call</span></a>
             </div>
           </div>
 
-          <a
-            class="btn map-btn"
+          <a class="btn map-btn"
             href="https://maps.app.goo.gl/AptVzv3bpSi44kQ4A?g_st=aw"
-            target="_blank"
-            rel="noopener">
+            target="_blank" rel="noopener"
+            data-i18n="mapButton">
             📍 Get Directions on Google Maps →
           </a>
 
           <br>
 
-          <a
-            class="instagram-btn"
+          <a class="instagram-btn"
             href="https://www.instagram.com/avs_convention_ac_hall/"
-            target="_blank"
-            rel="noopener">
+            target="_blank" rel="noopener"
+            data-i18n="instagramButton">
             Follow us on Instagram
           </a>
 
@@ -1346,8 +1381,8 @@
         <div class="contact-cards">
 
           <div class="contact-card">
-            <h3>Call for Bookings</h3>
-            <p>Contact for event and venue booking information.</p>
+            <h3 data-i18n="callBookings">Call for Bookings</h3>
+            <p data-i18n="bookingContactDescription">Contact for event and venue booking information.</p>
 
             <div class="person-name">Naveen Kumar</div>
 
@@ -1356,21 +1391,21 @@
             </a>
 
             <div class="contact-actions">
-              <a class="btn small-btn call-btn" href="tel:+919000865070">
+              <a class="btn small-btn call-btn" href="tel:+919000865070" data-i18n="callNow">
                 ☎ Call Now
               </a>
 
               <a class="btn small-btn whatsapp-btn"
-                 href="https://wa.me/919000865070"
-                 target="_blank" rel="noopener">
+                href="https://wa.me/919000865070"
+                target="_blank" rel="noopener">
                 WhatsApp
               </a>
             </div>
           </div>
 
           <div class="contact-card">
-            <h3>Call for Bookings</h3>
-            <p>Contact for event and venue booking information.</p>
+            <h3 data-i18n="callBookings">Call for Bookings</h3>
+            <p data-i18n="bookingContactDescription">Contact for event and venue booking information.</p>
 
             <div class="person-name">Sreekanth</div>
 
@@ -1379,13 +1414,13 @@
             </a>
 
             <div class="contact-actions">
-              <a class="btn small-btn call-btn" href="tel:+919491491719">
+              <a class="btn small-btn call-btn" href="tel:+919491491719" data-i18n="callNow">
                 ☎ Call Now
               </a>
 
               <a class="btn small-btn whatsapp-btn"
-                 href="https://wa.me/919491491719"
-                 target="_blank" rel="noopener">
+                href="https://wa.me/919491491719"
+                target="_blank" rel="noopener">
                 WhatsApp
               </a>
             </div>
@@ -1405,7 +1440,7 @@
 
         <div>
           <h3>AVS CONVENTION HALL A/C</h3>
-          <p>
+          <p data-i18n="footerDescription">
             A welcoming venue for weddings, family functions,
             traditional ceremonies and special celebrations
             in Mahabubnagar.
@@ -1413,33 +1448,29 @@
         </div>
 
         <div>
-          <h3>Quick Links</h3>
+          <h3 data-i18n="footerLinksTitle">Quick Links</h3>
           <ul class="footer-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#facilities">Facilities</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" data-i18n="navHome">Home</a></li>
+            <li><a href="#about" data-i18n="navAbout">About</a></li>
+            <li><a href="#events" data-i18n="navEvents">Events</a></li>
+            <li><a href="#facilities" data-i18n="navFacilities">Facilities</a></li>
+            <li><a href="#contact" data-i18n="navContact">Contact</a></li>
           </ul>
         </div>
 
         <div>
-          <h3>Call Us</h3>
-          <p>
-            <a href="tel:+919000865070">Naveen: +91 90008 65070</a>
-          </p>
-          <p>
-            <a href="tel:+919491491719">Sreekanth: +91 94914 91719</a>
-          </p>
+          <h3 data-i18n="footerCallTitle">Call Us</h3>
+          <p><a href="tel:+919000865070">Naveen: +91 90008 65070</a></p>
+          <p><a href="tel:+919491491719">Sreekanth: +91 94914 91719</a></p>
           <p>
             <a href="https://maps.app.goo.gl/AptVzv3bpSi44kQ4A?g_st=aw"
-               target="_blank" rel="noopener">
+              target="_blank" rel="noopener" data-i18n="footerMap">
               Google Maps →
             </a>
           </p>
           <p>
             <a href="https://www.instagram.com/avs_convention_ac_hall/"
-               target="_blank" rel="noopener">
+              target="_blank" rel="noopener" data-i18n="footerInstagram">
               Instagram →
             </a>
           </p>
@@ -1448,18 +1479,17 @@
       </div>
 
       <div class="copyright">
-        © <span id="year"></span> AVS CONVENTION HALL A/C. All Rights Reserved.
+        © <span id="year"></span> AVS CONVENTION HALL A/C.
+        <span data-i18n="copyright">All Rights Reserved.</span>
       </div>
 
     </div>
   </footer>
 
   <!-- FLOATING WHATSAPP -->
-  <a
-    class="floating-whatsapp"
+  <a class="floating-whatsapp"
     href="https://wa.me/919000865070"
-    target="_blank"
-    rel="noopener"
+    target="_blank" rel="noopener"
     aria-label="Chat on WhatsApp">
     ☎
   </a>
@@ -1468,28 +1498,294 @@
   <a class="back-top" href="#home" aria-label="Back to top">↑</a>
 
   <script>
-    // Mobile navigation
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks = document.getElementById('navLinks');
+    const translations = {
+      en: {
+        tagline: "CELEBRATE EVERY MOMENT",
+        navHome: "Home",
+        navAbout: "About",
+        navEvents: "Events",
+        navFacilities: "Facilities",
+        navContact: "Contact",
+        navBook: "Book Now",
 
-    menuToggle.addEventListener('click', function () {
-      const isOpen = navLinks.classList.toggle('active');
-      menuToggle.setAttribute('aria-expanded', isOpen);
-      menuToggle.textContent = isOpen ? '✕' : '☰';
+        tickerTitle: "📞 CALL FOR BOOKINGS:",
+        tickerLocation: "📍 MAHABUBNAGAR, TELANGANA",
+
+        heroTag: "A BEAUTIFUL PLACE FOR BEAUTIFUL MOMENTS",
+        heroTitle1: "Your Special Moments,",
+        heroTitle2: "Our Perfect Venue",
+        heroDescription: "Make your celebrations memorable at AVS Convention Hall A/C. A welcoming venue for weddings, traditional ceremonies, family celebrations and special occasions in Mahabubnagar.",
+        heroButton1: "Enquire for Booking →",
+        heroButton2: "Explore Events",
+
+        highlight1: "Convention Hall",
+        highlight2a: "Elegant",
+        highlight2b: "Celebration Space",
+        highlight3a: "Special",
+        highlight3b: "Family Occasions",
+        highlight4a: "Convenient",
+        highlight4b: "Mahabubnagar Location",
+
+        aboutEyebrow: "Welcome to AVS",
+        aboutTitle: "A Venue Where Memories Become Special",
+        aboutP1: "Every celebration deserves a beautiful setting. AVS Convention Hall A/C provides a welcoming space for families and guests to come together and celebrate life's important occasions.",
+        aboutP2: "From weddings and receptions to birthdays, traditional ceremonies and family gatherings, make your special day memorable with us.",
+        aboutNote: "Your celebrations matter to us. Contact our team to discuss your event requirements and booking details.",
+        aboutButton: "Contact Us →",
+
+        eventsEyebrow: "Celebrate Every Occasion",
+        eventsTitle: "Events & Celebrations",
+        eventsDescription: "A venue for memorable occasions, family functions, traditional ceremonies and professional gatherings.",
+
+        event1: "Engagements",
+        event2: "Weddings / Marriages",
+        event3: "Pre-Wedding Celebrations",
+        event4: "Wedding Receptions",
+        event5: "Post-Wedding Receptions",
+        event6: "Haldi Ceremony",
+        event7: "Mehendi Ceremony",
+        event8: "Sangeet Ceremony",
+        event9: "Pellikoduku / Pellikuthuru",
+        event10: "Wedding Anniversaries",
+        event11: "Half Saree Functions",
+        event12: "Dhoti Ceremony",
+        event13: "Naming Ceremony",
+        event14: "Annaprashana",
+        event15: "Cradle Ceremony",
+        event16: "Shastipurti",
+        event17: "Seemantham / Baby Shower",
+        event18: "Gruhapravesham",
+        event19: "Satyanarayana Swamy Vratham",
+        event20: "Birthday Celebrations",
+        event21: "First Birthday",
+        event22: "Family Gatherings",
+        event23: "Retirement Celebrations",
+        event24: "Felicitations",
+        event25: "Meetings",
+        event26: "Corporate Events",
+        event27: "Conferences & Seminars",
+        event28: "Product Launches",
+        event29: "Award Functions",
+
+        facilitiesEyebrow: "Comfort & Convenience",
+        facilitiesTitle: "Our Facilities",
+        facilitiesDescription: "Thoughtful facilities to help make your event comfortable and convenient for you and your guests.",
+
+        facility1: "Spacious Hall",
+        facilityDesc1: "A welcoming space for your special occasions.",
+        facility2: "AC Facility",
+        facilityDesc2: "Air-conditioned comfort for your guests.",
+        facility3: "Ample Parking",
+        facilityDesc3: "Convenient parking arrangements for visitors.",
+        facility4: "Power Backup",
+        facilityDesc4: "Backup arrangements for added convenience.",
+        facility5: "Catering Support",
+        facilityDesc5: "Support for your event catering requirements.",
+        facility6: "Decoration",
+        facilityDesc6: "Customizable decoration arrangements.",
+        facility7: "Projector Facility",
+        facilityDesc7: "Presentation and display support for events.",
+        facility8: "Clean & Maintained",
+        facilityDesc8: "A clean and well-maintained event space.",
+
+        bookingEyebrow: "Make Your Occasion Memorable",
+        bookingTitle: "Planning a Special Celebration?",
+        bookingDescription: "Get in touch with us to discuss your event and booking requirements.",
+        bookingButton: "Enquire Now →",
+
+        contactEyebrow: "We Are Here to Help",
+        contactTitle: "Contact & Bookings",
+        contactDescription: "Call us directly for venue enquiries, availability and booking information.",
+        visitTitle: "Visit AVS Convention Hall A/C",
+        visitDescription: "Contact our team for booking details and information about your upcoming celebration.",
+        addressLabel: "Address",
+        addressText: "Srinivasa Colony, Mahabubnagar, Telangana, India",
+        tapToCall: "Tap to Call",
+        mapButton: "📍 Get Directions on Google Maps →",
+        instagramButton: "Follow us on Instagram",
+        callBookings: "Call for Bookings",
+        bookingContactDescription: "Contact for event and venue booking information.",
+        callNow: "☎ Call Now",
+
+        footerDescription: "A welcoming venue for weddings, family functions, traditional ceremonies and special celebrations in Mahabubnagar.",
+        footerLinksTitle: "Quick Links",
+        footerCallTitle: "Call Us",
+        footerMap: "Google Maps →",
+        footerInstagram: "Instagram →",
+        copyright: "All Rights Reserved."
+      },
+
+      te: {
+        tagline: "ప్రతి వేడుకను ఆనందంగా జరుపుకోండి",
+        navHome: "హోమ్",
+        navAbout: "మా గురించి",
+        navEvents: "వేడుకలు",
+        navFacilities: "సౌకర్యాలు",
+        navContact: "సంప్రదించండి",
+        navBook: "బుకింగ్ చేయండి",
+
+        tickerTitle: "📞 బుకింగ్ కోసం కాల్ చేయండి:",
+        tickerLocation: "📍 మహబూబ్‌నగర్, తెలంగాణ",
+
+        heroTag: "మీ ఆనంద వేడుకలకు అందమైన వేదిక",
+        heroTitle1: "మీ ప్రత్యేక సందర్భాలకు,",
+        heroTitle2: "మా అందమైన వేదిక",
+        heroDescription: "AVS కన్వెన్షన్ హాల్ A/Cలో మీ వేడుకలను చిరస్మరణీయంగా జరుపుకోండి. వివాహాలు, సంప్రదాయ వేడుకలు, కుటుంబ కార్యక్రమాలు మరియు ఇతర ప్రత్యేక సందర్భాలకు అనువైన వేదిక.",
+        heroButton1: "బుకింగ్ కోసం సంప్రదించండి →",
+        heroButton2: "వేడుకలను చూడండి",
+
+        highlight1: "కన్వెన్షన్ హాల్",
+        highlight2a: "అందమైన",
+        highlight2b: "వేడుకల వేదిక",
+        highlight3a: "ప్రత్యేక",
+        highlight3b: "కుటుంబ వేడుకలు",
+        highlight4a: "అనుకూలమైన",
+        highlight4b: "మహబూబ్‌నగర్ ప్రాంతం",
+
+        aboutEyebrow: "AVSకు స్వాగతం",
+        aboutTitle: "మీ జ్ఞాపకాలను ప్రత్యేకంగా మార్చే వేదిక",
+        aboutP1: "ప్రతి వేడుకకు అందమైన వేదిక అవసరం. AVS కన్వెన్షన్ హాల్ A/C కుటుంబ సభ్యులు మరియు అతిథులు కలిసి జీవితంలోని ముఖ్యమైన సందర్భాలను ఆనందంగా జరుపుకునేందుకు అనువైన వేదికను అందిస్తుంది.",
+        aboutP2: "వివాహాలు, రిసెప్షన్లు, పుట్టినరోజులు, సంప్రదాయ వేడుకలు మరియు కుటుంబ సమావేశాలను మాతో కలిసి చిరస్మరణీయంగా చేసుకోండి.",
+        aboutNote: "మీ వేడుక మాకు ముఖ్యమైనది. మీ కార్యక్రమం మరియు బుకింగ్ వివరాల కోసం మా బృందాన్ని సంప్రదించండి.",
+        aboutButton: "మమ్మల్ని సంప్రదించండి →",
+
+        eventsEyebrow: "ప్రతి సందర్భాన్ని ఆనందంగా జరుపుకోండి",
+        eventsTitle: "వేడుకలు మరియు కార్యక్రమాలు",
+        eventsDescription: "కుటుంబ వేడుకలు, సంప్రదాయ కార్యక్రమాలు మరియు ఇతర ప్రత్యేక సందర్భాలకు అనువైన వేదిక.",
+
+        event1: "నిశ్చితార్థ వేడుకలు",
+        event2: "వివాహాలు",
+        event3: "పెళ్లికి ముందు వేడుకలు",
+        event4: "వివాహ రిసెప్షన్లు",
+        event5: "వివాహానంతర రిసెప్షన్లు",
+        event6: "హల్దీ వేడుక",
+        event7: "మెహందీ వేడుక",
+        event8: "సంగీత్ వేడుక",
+        event9: "పెళ్లికొడుకు / పెళ్లికూతురు వేడుకలు",
+        event10: "వివాహ వార్షికోత్సవాలు",
+        event11: "హాఫ్ సారీ ఫంక్షన్లు",
+        event12: "ధోవతి వేడుక",
+        event13: "నామకరణ వేడుక",
+        event14: "అన్నప్రాశన వేడుక",
+        event15: "బారసాల / ఉయ్యాల వేడుక",
+        event16: "షష్టిపూర్తి వేడుక",
+        event17: "సీమంతం / శ్రీమంతం",
+        event18: "గృహప్రవేశ వేడుక",
+        event19: "సత్యనారాయణ స్వామి వ్రతం",
+        event20: "పుట్టినరోజు వేడుకలు",
+        event21: "మొదటి పుట్టినరోజు",
+        event22: "కుటుంబ సమావేశాలు",
+        event23: "పదవీ విరమణ వేడుకలు",
+        event24: "సన్మాన కార్యక్రమాలు",
+        event25: "సమావేశాలు",
+        event26: "కార్పొరేట్ కార్యక్రమాలు",
+        event27: "సదస్సులు మరియు సెమినార్లు",
+        event28: "ఉత్పత్తుల ఆవిష్కరణ కార్యక్రమాలు",
+        event29: "అవార్డు కార్యక్రమాలు",
+
+        facilitiesEyebrow: "సౌకర్యం మరియు సదుపాయాలు",
+        facilitiesTitle: "మా సౌకర్యాలు",
+        facilitiesDescription: "మీకు మరియు మీ అతిథులకు సౌకర్యవంతమైన వేడుకల కోసం అందుబాటులో ఉన్న సదుపాయాలు.",
+
+        facility1: "విశాలమైన హాల్",
+        facilityDesc1: "మీ ప్రత్యేక వేడుకలకు అనువైన విశాలమైన ప్రదేశం.",
+        facility2: "ఏసీ సౌకర్యం",
+        facilityDesc2: "మీ అతిథులకు ఏసీ సౌకర్యం.",
+        facility3: "వాహనాల పార్కింగ్",
+        facilityDesc3: "వాహనాల పార్కింగ్ సదుపాయం.",
+        facility4: "విద్యుత్ బ్యాకప్",
+        facilityDesc4: "అదనపు సౌకర్యం కోసం విద్యుత్ బ్యాకప్.",
+        facility5: "కేటరింగ్ సదుపాయం",
+        facilityDesc5: "మీ కార్యక్రమానికి కేటరింగ్ ఏర్పాట్లకు సహాయం.",
+        facility6: "అలంకరణ",
+        facilityDesc6: "మీ అవసరాలకు అనుగుణంగా అలంకరణ ఏర్పాట్లు.",
+        facility7: "ప్రొజెక్టర్ సదుపాయం",
+        facilityDesc7: "కార్యక్రమాల ప్రదర్శనలకు ప్రొజెక్టర్ సదుపాయం.",
+        facility8: "శుభ్రత మరియు నిర్వహణ",
+        facilityDesc8: "శుభ్రంగా నిర్వహించబడే కార్యక్రమాల ప్రదేశం.",
+
+        bookingEyebrow: "మీ వేడుకను చిరస్మరణీయం చేసుకోండి",
+        bookingTitle: "మీరు ప్రత్యేక వేడుకను నిర్వహించాలనుకుంటున్నారా?",
+        bookingDescription: "మీ కార్యక్రమం మరియు బుకింగ్ వివరాల కోసం మమ్మల్ని సంప్రదించండి.",
+        bookingButton: "ఇప్పుడే సంప్రదించండి →",
+
+        contactEyebrow: "మీకు సహాయం చేయడానికి మేమున్నాం",
+        contactTitle: "సంప్రదింపు మరియు బుకింగ్స్",
+        contactDescription: "హాల్ వివరాలు, ఖాళీ తేదీలు మరియు బుకింగ్ సమాచారం కోసం నేరుగా కాల్ చేయండి.",
+        visitTitle: "AVS కన్వెన్షన్ హాల్ A/Cకు స్వాగతం",
+        visitDescription: "మీ రాబోయే వేడుకకు సంబంధించిన బుకింగ్ వివరాల కోసం మా బృందాన్ని సంప్రదించండి.",
+        addressLabel: "చిరునామా",
+        addressText: "శ్రీనివాస కాలనీ, మహబూబ్‌నగర్, తెలంగాణ, భారతదేశం",
+        tapToCall: "కాల్ చేయండి",
+        mapButton: "📍 గూగుల్ మ్యాప్స్‌లో దారి చూడండి →",
+        instagramButton: "మా ఇన్‌స్టాగ్రామ్‌ను అనుసరించండి",
+        callBookings: "బుకింగ్ కోసం కాల్ చేయండి",
+        bookingContactDescription: "వేడుకలు మరియు హాల్ బుకింగ్ వివరాల కోసం సంప్రదించండి.",
+        callNow: "☎ ఇప్పుడే కాల్ చేయండి",
+
+        footerDescription: "వివాహాలు, కుటుంబ వేడుకలు, సంప్రదాయ కార్యక్రమాలు మరియు ప్రత్యేక సందర్భాలకు మహబూబ్‌నగర్‌లో అనువైన వేదిక.",
+        footerLinksTitle: "ముఖ్యమైన లింకులు",
+        footerCallTitle: "మాకు కాల్ చేయండి",
+        footerMap: "గూగుల్ మ్యాప్స్ →",
+        footerInstagram: "ఇన్‌స్టాగ్రామ్ →",
+        copyright: "సర్వ హక్కులు ప్రత్యేకించబడ్డాయి."
+      }
+    };
+
+    // Switch between English and Telugu
+    function setLanguage(language) {
+      const dictionary = translations[language];
+
+      document.querySelectorAll("[data-i18n]").forEach(function(element) {
+        const key = element.getAttribute("data-i18n");
+
+        if (dictionary[key] !== undefined) {
+          element.textContent = dictionary[key];
+        }
+      });
+
+      document.documentElement.lang = language;
+      document.body.classList.toggle("telugu", language === "te");
+
+      document.getElementById("englishBtn").classList.toggle(
+        "active", language === "en"
+      );
+
+      document.getElementById("teluguBtn").classList.toggle(
+        "active", language === "te"
+      );
+
+      // Update page title
+      document.title = language === "te"
+        ? "AVS కన్వెన్షన్ హాల్ A/C | మహబూబ్‌నగర్"
+        : "AVS Convention Hall A/C | Mahabubnagar";
+
+      // Close mobile navigation after language selection
+      document.getElementById("navLinks").classList.remove("active");
+      document.getElementById("menuToggle").setAttribute("aria-expanded", "false");
+      document.getElementById("menuToggle").textContent = "☰";
+    }
+
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function() {
+      const isOpen = navLinks.classList.toggle("active");
+      menuToggle.setAttribute("aria-expanded", isOpen);
+      menuToggle.textContent = isOpen ? "✕" : "☰";
     });
 
-    // Close mobile menu after selecting a link
-    document.querySelectorAll('.nav-links a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        navLinks.classList.remove('active');
-        menuToggle.setAttribute('aria-expanded', 'false');
-        menuToggle.textContent = '☰';
+    document.querySelectorAll(".nav-links a").forEach(function(link) {
+      link.addEventListener("click", function() {
+        navLinks.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "☰";
       });
     });
 
     // Automatically update copyright year
-    document.getElementById('year').textContent =
-      new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
 </body>
