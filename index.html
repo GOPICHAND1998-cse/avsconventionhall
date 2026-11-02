@@ -1,14 +1,13 @@
- 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>AVS Convention Hall | Best Function Hall in Mahabubnagar</title>
-  <meta name="description" content="Celebrate weddings, receptions, birthdays and family functions at AVS Convention Hall, Srinivasa Colony, Mahabubnagar, Telangana. Contact us for bookings.">
-  <meta name="keywords" content="AVS Convention Hall, function hall Mahabubnagar, marriage hall Mahabubnagar, wedding hall, Srinivasa Colony">
-  <meta name="author" content="AVS Convention Hall">
+  <title>AVS Convention Hall A/C | Mahabubnagar</title>
+  <meta name="description" content="AVS Convention Hall A/C, Srinivasa Colony, Mahabubnagar. Contact us for wedding, reception and family function bookings.">
+  <meta name="keywords" content="AVS Convention Hall, AVS Convention Hall AC, function hall Mahabubnagar, marriage hall Mahabubnagar">
   <meta name="theme-color" content="#641b25">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +24,7 @@
       --white: #ffffff;
       --text: #352a28;
       --muted: #756967;
-      --shadow: 0 12px 35px rgba(55, 22, 22, 0.12);
+      --shadow: 0 12px 35px rgba(55,22,22,0.12);
     }
 
     * {
@@ -36,7 +35,7 @@
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 85px;
+      scroll-padding-top: 90px;
     }
 
     body {
@@ -51,18 +50,13 @@
       color: inherit;
     }
 
-    img {
-      display: block;
-      max-width: 100%;
-    }
-
     .container {
       width: min(1160px, 92%);
       margin: auto;
     }
 
     .section {
-      padding: 85px 0;
+      padding: 80px 0;
     }
 
     .section-heading {
@@ -128,7 +122,7 @@
       color: var(--maroon);
     }
 
-    /* Header */
+    /* HEADER */
 
     header {
       background: var(--dark-maroon);
@@ -140,7 +134,7 @@
     }
 
     .navbar {
-      min-height: 76px;
+      min-height: 78px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -154,24 +148,26 @@
     }
 
     .logo-mark {
-      width: 45px;
-      height: 45px;
+      width: 48px;
+      height: 48px;
       display: grid;
       place-items: center;
       border: 1px solid var(--gold);
       color: var(--gold);
       font-family: 'Cormorant Garamond', serif;
-      font-size: 25px;
+      font-size: 23px;
       font-weight: 700;
       border-radius: 50%;
+      flex-shrink: 0;
     }
 
     .logo-text strong {
       display: block;
       color: var(--light-gold);
       font-family: 'Cormorant Garamond', serif;
-      font-size: 23px;
+      font-size: clamp(19px, 3vw, 28px);
       line-height: 1.1;
+      letter-spacing: 1px;
     }
 
     .logo-text small {
@@ -179,12 +175,13 @@
       font-size: 9px;
       letter-spacing: 2px;
       color: #eadcc9;
+      margin-top: 4px;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 25px;
+      gap: 23px;
       list-style: none;
     }
 
@@ -216,16 +213,52 @@
       cursor: pointer;
     }
 
-    /* Hero */
+    /* SCROLLING CONTACT STRIP */
+
+    .contact-ticker {
+      background: var(--gold);
+      color: var(--dark-maroon);
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 10px 0;
+    }
+
+    .ticker-track {
+      display: inline-flex;
+      align-items: center;
+      gap: 55px;
+      min-width: max-content;
+      animation: ticker 28s linear infinite;
+    }
+
+    .ticker-track:hover {
+      animation-play-state: paused;
+    }
+
+    .ticker-track a {
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .ticker-track a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* HERO */
 
     .hero {
-      min-height: 650px;
+      min-height: 620px;
       display: flex;
       align-items: center;
       position: relative;
       color: white;
       background:
-        linear-gradient(90deg, rgba(34, 10, 15, 0.88), rgba(34, 10, 15, 0.36)),
+        linear-gradient(90deg, rgba(34,10,15,0.88), rgba(34,10,15,0.36)),
         url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=2000&q=85') center/cover no-repeat;
     }
 
@@ -268,7 +301,7 @@
       gap: 13px;
     }
 
-    /* Highlights */
+    /* HIGHLIGHTS */
 
     .highlights {
       background: var(--maroon);
@@ -304,7 +337,7 @@
       font-size: 11px;
     }
 
-    /* About */
+    /* ABOUT */
 
     .about-grid {
       display: grid;
@@ -313,20 +346,20 @@
       align-items: center;
     }
 
-    .about-images {
+    .about-image {
       position: relative;
       padding: 0 25px 25px 0;
     }
 
-    .about-images img {
+    .about-image img {
       width: 100%;
-      height: 440px;
+      height: 420px;
       object-fit: cover;
       border-radius: 5px;
       box-shadow: var(--shadow);
     }
 
-    .about-images::after {
+    .about-image::after {
       content: "";
       position: absolute;
       right: 0;
@@ -360,7 +393,7 @@
       font-size: 13px;
     }
 
-    /* Events */
+    /* EVENTS */
 
     .events-section {
       background: #f7f0e7;
@@ -404,7 +437,7 @@
       line-height: 1.2;
     }
 
-    /* Facilities */
+    /* FACILITIES */
 
     .facilities-grid {
       display: grid;
@@ -450,42 +483,7 @@
       font-size: 12px;
     }
 
-    /* Gallery */
-
-    .gallery-section {
-      background: #f7f0e7;
-    }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-auto-rows: 210px;
-      gap: 12px;
-    }
-
-    .gallery-item {
-      overflow: hidden;
-      border-radius: 4px;
-      position: relative;
-    }
-
-    .gallery-item:first-child {
-      grid-column: span 2;
-      grid-row: span 2;
-    }
-
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.5s;
-    }
-
-    .gallery-item:hover img {
-      transform: scale(1.08);
-    }
-
-    /* Booking banner */
+    /* BOOKING BANNER */
 
     .booking-banner {
       padding: 75px 20px;
@@ -508,19 +506,19 @@
       margin-bottom: 25px;
     }
 
-    /* Contact */
+    /* CONTACT */
 
     .contact-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1.3fr;
       gap: 35px;
+      align-items: start;
     }
 
-    .contact-info h3,
-    .contact-card h3 {
+    .contact-info h3 {
       color: var(--maroon);
       font-family: 'Cormorant Garamond', serif;
-      font-size: 27px;
+      font-size: 29px;
       margin-bottom: 14px;
     }
 
@@ -534,18 +532,19 @@
       display: flex;
       gap: 13px;
       margin: 18px 0;
-      align-items: flex-start;
+      align-items: center;
     }
 
     .contact-detail .symbol {
-      width: 40px;
-      height: 40px;
+      width: 42px;
+      height: 42px;
       flex-shrink: 0;
       display: grid;
       place-items: center;
       background: #f4ead8;
       color: var(--maroon);
       border-radius: 50%;
+      font-size: 18px;
     }
 
     .contact-detail strong {
@@ -560,41 +559,66 @@
       font-size: 13px;
     }
 
+    .contact-detail a:hover {
+      color: var(--maroon);
+      text-decoration: underline;
+    }
+
     .contact-cards {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 15px;
+      gap: 18px;
     }
 
     .contact-card {
-      padding: 25px 18px;
+      padding: 27px 20px;
       background: white;
       border: 1px solid #eee3d3;
       border-radius: 5px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .contact-card h3 {
+      color: var(--maroon);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 25px;
+      margin-bottom: 12px;
     }
 
     .contact-card p {
       font-size: 12px;
       color: var(--muted);
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
-    .contact-card .person-name {
-      font-size: 16px;
+    .person-name {
+      font-size: 17px;
       font-weight: 600;
       color: var(--maroon);
       margin-bottom: 5px;
     }
 
+    .phone-number {
+      display: block;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--dark-maroon);
+      margin: 8px 0 17px;
+      white-space: nowrap;
+    }
+
+    .phone-number:hover {
+      color: #168b50;
+    }
+
     .contact-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 9px;
     }
 
     .small-btn {
-      padding: 9px 11px;
+      padding: 10px 13px;
       font-size: 11px;
       border-radius: 3px;
       font-weight: 600;
@@ -627,7 +651,7 @@
       margin-top: 8px;
     }
 
-    /* Footer */
+    /* FOOTER */
 
     footer {
       background: var(--dark-maroon);
@@ -675,7 +699,7 @@
       font-size: 11px;
     }
 
-    /* Floating buttons */
+    /* FLOATING BUTTONS */
 
     .floating-whatsapp {
       position: fixed;
@@ -689,12 +713,8 @@
       border-radius: 50%;
       background: #20b968;
       color: white;
-      font-size: 28px;
+      font-size: 26px;
       box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-    }
-
-    .floating-whatsapp:hover {
-      transform: scale(1.08);
     }
 
     .back-top {
@@ -713,7 +733,7 @@
       box-shadow: 0 5px 15px rgba(0,0,0,0.18);
     }
 
-    /* Responsive design */
+    /* RESPONSIVE */
 
     @media (max-width: 900px) {
       .nav-links {
@@ -739,7 +759,7 @@
 
     @media (max-width: 700px) {
       .navbar {
-        min-height: 68px;
+        min-height: 70px;
       }
 
       .menu-toggle {
@@ -751,7 +771,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        top: 68px;
+        top: 70px;
         padding: 18px 5%;
         background: var(--dark-maroon);
         flex-direction: column;
@@ -781,7 +801,7 @@
       }
 
       .hero {
-        min-height: 570px;
+        min-height: 550px;
         background-position: 60% center;
       }
 
@@ -803,7 +823,7 @@
       }
 
       .section {
-        padding: 65px 0;
+        padding: 60px 0;
       }
 
       .about-grid,
@@ -811,8 +831,8 @@
         grid-template-columns: 1fr;
       }
 
-      .about-images img {
-        height: 320px;
+      .about-image img {
+        height: 300px;
       }
 
       .about-content h2 {
@@ -842,16 +862,6 @@
         padding: 22px 12px;
       }
 
-      .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 150px;
-      }
-
-      .gallery-item:first-child {
-        grid-column: span 2;
-        grid-row: span 1;
-      }
-
       .contact-cards {
         grid-template-columns: 1fr;
       }
@@ -859,6 +869,10 @@
       .footer-grid {
         grid-template-columns: 1fr;
         gap: 22px;
+      }
+
+      .ticker-track {
+        gap: 35px;
       }
     }
 
@@ -874,6 +888,10 @@
       .hero-buttons .btn {
         width: 100%;
       }
+
+      .logo-text strong {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
@@ -887,12 +905,13 @@
       <a href="#home" class="logo">
         <div class="logo-mark">AVS</div>
         <div class="logo-text">
-          <strong>AVS Convention Hall</strong>
+          <strong>AVS CONVENTION HALL A/C</strong>
           <small>CELEBRATE EVERY MOMENT</small>
         </div>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation menu" aria-expanded="false">
         ☰
       </button>
 
@@ -901,13 +920,29 @@
         <li><a href="#about">About</a></li>
         <li><a href="#events">Events</a></li>
         <li><a href="#facilities">Facilities</a></li>
-        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a class="nav-book" href="#contact">Book Now</a></li>
       </ul>
 
     </div>
   </header>
+
+  <!-- SCROLLING CONTACT NUMBERS -->
+  <div class="contact-ticker">
+    <div class="ticker-track">
+
+      <span>📞 CALL FOR BOOKINGS:</span>
+      <a href="tel:+919000865070">Naveen Kumar: +91 90008 65070</a>
+      <a href="tel:+919491491719">Sreekanth: +91 94914 91719</a>
+      <span>📍 MAHABUBNAGAR, TELANGANA</span>
+
+      <span>📞 CALL FOR BOOKINGS:</span>
+      <a href="tel:+919000865070">Naveen Kumar: +91 90008 65070</a>
+      <a href="tel:+919491491719">Sreekanth: +91 94914 91719</a>
+      <span>📍 MAHABUBNAGAR, TELANGANA</span>
+
+    </div>
+  </div>
 
   <!-- HERO -->
   <section class="hero" id="home">
@@ -922,14 +957,14 @@
         </h1>
 
         <p>
-          Make your celebrations memorable at AVS Convention Hall.
+          Make your celebrations memorable at AVS Convention Hall A/C.
           A welcoming venue for weddings, traditional ceremonies,
           family celebrations and special occasions in Mahabubnagar.
         </p>
 
         <div class="hero-buttons">
           <a href="#contact" class="btn btn-primary">Enquire for Booking →</a>
-          <a href="#gallery" class="btn btn-outline">Explore Gallery</a>
+          <a href="#events" class="btn btn-outline">Explore Events</a>
         </div>
 
       </div>
@@ -941,13 +976,13 @@
     <div class="container highlight-grid">
 
       <div class="highlight-item">
-        <strong>Elegant</strong>
-        <span>Celebration Space</span>
+        <strong>A/C</strong>
+        <span>Convention Hall</span>
       </div>
 
       <div class="highlight-item">
-        <strong>Comfort</strong>
-        <span>Guest Experience</span>
+        <strong>Elegant</strong>
+        <span>Celebration Space</span>
       </div>
 
       <div class="highlight-item">
@@ -967,10 +1002,10 @@
   <section class="section" id="about">
     <div class="container about-grid">
 
-      <div class="about-images">
+      <div class="about-image">
         <img
           src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=85"
-          alt="Beautifully decorated event venue">
+          alt="Decorated celebration venue">
       </div>
 
       <div class="about-content">
@@ -979,7 +1014,7 @@
         <h2>A Venue Where Memories Become Special</h2>
 
         <p>
-          Every celebration deserves a beautiful setting. AVS Convention Hall
+          Every celebration deserves a beautiful setting. AVS Convention Hall A/C
           provides a welcoming space for families and guests to come together
           and celebrate life's important occasions.
         </p>
@@ -1231,49 +1266,6 @@
     </div>
   </section>
 
-  <!-- GALLERY -->
-  <section class="section gallery-section" id="gallery">
-    <div class="container">
-
-      <div class="section-heading">
-        <span class="eyebrow">A Glimpse of Celebrations</span>
-        <h2>Photo Gallery</h2>
-        <p>
-          Explore event and celebration inspiration.
-          Replace these sample photographs with actual AVS Convention Hall photos.
-        </p>
-      </div>
-
-      <div class="gallery-grid">
-
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=85" alt="Event venue decoration" loading="lazy">
-        </div>
-
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80" alt="Wedding celebration" loading="lazy">
-        </div>
-
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=700&q=80" alt="Wedding table decoration" loading="lazy">
-        </div>
-
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=700&q=80" alt="Wedding reception" loading="lazy">
-        </div>
-
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=700&q=80" alt="Party celebration" loading="lazy">
-        </div>
-
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=700&q=80" alt="Event gathering" loading="lazy">
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <!-- BOOKING BANNER -->
   <section class="booking-banner">
     <div class="container">
@@ -1292,7 +1284,7 @@
         <span class="eyebrow">We Are Here to Help</span>
         <h2>Contact & Bookings</h2>
         <p>
-          Contact our team for venue enquiries, availability
+          Call us directly for venue enquiries, availability
           and booking information.
         </p>
       </div>
@@ -1300,11 +1292,11 @@
       <div class="contact-grid">
 
         <div class="contact-info">
-          <h3>Visit AVS Convention Hall</h3>
+          <h3>Visit AVS Convention Hall A/C</h3>
 
           <p>
-            We welcome your enquiries. Call or message us
-            to discuss your upcoming celebration.
+            Contact our team for booking details and information
+            about your upcoming celebration.
           </p>
 
           <div class="contact-detail">
@@ -1318,28 +1310,16 @@
           <div class="contact-detail">
             <div class="symbol">📞</div>
             <div>
-              <strong>Phone</strong>
-              <a href="tel:+919000865070">+91 90008 65070</a>
+              <strong>Naveen Kumar</strong>
+              <a href="tel:+919000865070">+91 90008 65070 — Tap to Call</a>
             </div>
           </div>
 
           <div class="contact-detail">
-            <div class="symbol">💬</div>
+            <div class="symbol">📞</div>
             <div>
-              <strong>WhatsApp</strong>
-              <a href="https://wa.me/919000865070" target="_blank" rel="noopener">
-                Message us on WhatsApp
-              </a>
-            </div>
-          </div>
-
-          <div class="contact-detail">
-            <div class="symbol">📷</div>
-            <div>
-              <strong>Instagram</strong>
-              <a href="https://www.instagram.com/avs_convention_ac_hall/" target="_blank" rel="noopener">
-                @avs_convention_ac_hall
-              </a>
+              <strong>Sreekanth</strong>
+              <a href="tel:+919491491719">+91 94914 91719 — Tap to Call</a>
             </div>
           </div>
 
@@ -1366,15 +1346,18 @@
         <div class="contact-cards">
 
           <div class="contact-card">
-            <h3>Booking Enquiries</h3>
+            <h3>Call for Bookings</h3>
             <p>Contact for event and venue booking information.</p>
 
             <div class="person-name">Naveen Kumar</div>
-            <p>AVS Convention Hall</p>
+
+            <a class="phone-number" href="tel:+919000865070">
+              +91 90008 65070
+            </a>
 
             <div class="contact-actions">
               <a class="btn small-btn call-btn" href="tel:+919000865070">
-                ☎ Call
+                ☎ Call Now
               </a>
 
               <a class="btn small-btn whatsapp-btn"
@@ -1386,15 +1369,18 @@
           </div>
 
           <div class="contact-card">
-            <h3>Booking Enquiries</h3>
+            <h3>Call for Bookings</h3>
             <p>Contact for event and venue booking information.</p>
 
             <div class="person-name">Sreekanth</div>
-            <p>AVS Convention Hall</p>
+
+            <a class="phone-number" href="tel:+919491491719">
+              +91 94914 91719
+            </a>
 
             <div class="contact-actions">
               <a class="btn small-btn call-btn" href="tel:+919491491719">
-                ☎ Call
+                ☎ Call Now
               </a>
 
               <a class="btn small-btn whatsapp-btn"
@@ -1418,7 +1404,7 @@
       <div class="footer-grid">
 
         <div>
-          <h3>AVS Convention Hall</h3>
+          <h3>AVS CONVENTION HALL A/C</h3>
           <p>
             A welcoming venue for weddings, family functions,
             traditional ceremonies and special celebrations
@@ -1433,18 +1419,22 @@
             <li><a href="#about">About Us</a></li>
             <li><a href="#events">Events</a></li>
             <li><a href="#facilities">Facilities</a></li>
-            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
 
         <div>
-          <h3>Find Us</h3>
-          <p>Srinivasa Colony, Mahabubnagar, Telangana.</p>
+          <h3>Call Us</h3>
+          <p>
+            <a href="tel:+919000865070">Naveen: +91 90008 65070</a>
+          </p>
+          <p>
+            <a href="tel:+919491491719">Sreekanth: +91 94914 91719</a>
+          </p>
           <p>
             <a href="https://maps.app.goo.gl/AptVzv3bpSi44kQ4A?g_st=aw"
                target="_blank" rel="noopener">
-              Open Google Maps →
+              Google Maps →
             </a>
           </p>
           <p>
@@ -1458,7 +1448,7 @@
       </div>
 
       <div class="copyright">
-        © <span id="year"></span> AVS Convention Hall. All Rights Reserved.
+        © <span id="year"></span> AVS CONVENTION HALL A/C. All Rights Reserved.
       </div>
 
     </div>
@@ -1470,7 +1460,7 @@
     href="https://wa.me/919000865070"
     target="_blank"
     rel="noopener"
-    aria-label="Chat with AVS Convention Hall on WhatsApp">
+    aria-label="Chat on WhatsApp">
     ☎
   </a>
 
