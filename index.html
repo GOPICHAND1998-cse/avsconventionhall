@@ -1,1056 +1,1506 @@
-
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AVS Convention Hall | Mahabubnagar</title>
-<meta name="description" content="Celebrate weddings, receptions, birthdays, traditional ceremonies and special occasions at AVS Convention Hall, Srinivasa Colony, Mahabubnagar.">
-<meta name="theme-color" content="#59182b">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-:root {
-  --maroon:#59182b;
-  --deep:#310b19;
-  --gold:#d6b16b;
-  --cream:#fffaf2;
-  --white:#fff;
-  --text:#393333;
-  --muted:#777;
-}
-
-* {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  scroll-behavior:smooth;
-}
-
-body {
-  font-family:'Poppins',sans-serif;
-  color:var(--text);
-  background:white;
-  line-height:1.7;
-}
-
-a {text-decoration:none;}
-
-img {
-  width:100%;
-  display:block;
-  object-fit:cover;
-}
-
-.container {
-  width:90%;
-  max-width:1200px;
-  margin:auto;
-}
-
-.section {
-  padding:85px 0;
-}
-
-.section-title {
-  text-align:center;
-  font-family:'Cormorant Garamond',serif;
-  font-size:45px;
-  color:var(--maroon);
-  line-height:1.2;
-  margin-bottom:12px;
-}
-
-.section-subtitle {
-  text-align:center;
-  color:var(--muted);
-  max-width:720px;
-  margin:0 auto 45px;
-  font-size:15px;
-}
-
-.gold-line {
-  width:65px;
-  height:3px;
-  background:var(--gold);
-  margin:16px auto 22px;
-}
-
-/* HEADER */
-
-header {
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:var(--deep);
-  box-shadow:0 3px 18px #0003;
-}
-
-.header-inner {
-  width:90%;
-  max-width:1250px;
-  min-height:82px;
-  margin:auto;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.logo {
-  color:var(--gold);
-  font-family:'Cormorant Garamond',serif;
-  font-size:34px;
-  font-weight:700;
-  line-height:1;
-  letter-spacing:2px;
-}
-
-.logo small {
-  display:block;
-  color:white;
-  font-family:'Poppins',sans-serif;
-  font-size:9px;
-  letter-spacing:4px;
-  text-align:center;
-  margin-top:7px;
-}
-
-nav {
-  display:flex;
-  gap:25px;
-  align-items:center;
-}
-
-nav a {
-  color:white;
-  font-size:13px;
-  font-weight:500;
-  transition:.3s;
-}
-
-nav a:hover {color:var(--gold);}
-
-.nav-book {
-  background:var(--gold);
-  color:var(--deep);
-  padding:10px 17px;
-  border-radius:25px;
-}
-
-.menu-toggle {
-  display:none;
-  border:0;
-  background:none;
-  color:white;
-  font-size:28px;
-  cursor:pointer;
-}
-
-/* BUTTONS */
-
-.btn {
-  display:inline-block;
-  padding:13px 25px;
-  border-radius:30px;
-  font-size:13px;
-  font-weight:600;
-  transition:.3s;
-  text-align:center;
-}
-
-.btn:hover {
-  transform:translateY(-3px);
-  box-shadow:0 7px 18px #0002;
-}
-
-.btn-gold {
-  background:var(--gold);
-  color:var(--deep);
-}
-
-.btn-white {
-  background:white;
-  color:var(--maroon);
-}
-
-.btn-outline {
-  border:1px solid white;
-  color:white;
-}
-
-/* HERO */
-
-.hero {
-  min-height:650px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding:80px 20px;
-  color:white;
-  background:
-    linear-gradient(90deg,#230713b8,#23071370),
-    url("https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=2000&q=90");
-  background-size:cover;
-  background-position:center;
-}
-
-.hero-content {
-  max-width:850px;
-}
-
-.hero-tag {
-  color:var(--gold);
-  letter-spacing:5px;
-  font-size:12px;
-  font-weight:600;
-  margin-bottom:20px;
-}
-
-.hero h1 {
-  font-family:'Cormorant Garamond',serif;
-  color:var(--gold);
-  font-size:68px;
-  line-height:1.08;
-  margin-bottom:22px;
-}
-
-.hero p {
-  font-size:17px;
-  max-width:650px;
-  margin:0 auto 30px;
-}
-
-.hero-buttons {
-  display:flex;
-  gap:15px;
-  justify-content:center;
-  flex-wrap:wrap;
-}
-
-/* ABOUT */
-
-.about {
-  background:var(--cream);
-}
-
-.about-layout {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:50px;
-  align-items:center;
-}
-
-.about-image {
-  height:420px;
-  border-radius:12px;
-  overflow:hidden;
-  box-shadow:15px 15px 0 var(--gold);
-}
-
-.about-image img {
-  height:100%;
-}
-
-.about-text h2 {
-  font-family:'Cormorant Garamond',serif;
-  font-size:43px;
-  color:var(--maroon);
-  line-height:1.15;
-  margin-bottom:20px;
-}
-
-.about-text p {
-  color:#666;
-  margin-bottom:15px;
-  font-size:14px;
-}
-
-.about-label {
-  color:#a27a37;
-  font-size:12px;
-  font-weight:700;
-  letter-spacing:3px;
-  margin-bottom:12px;
-}
-
-/* EVENT CATEGORIES */
-
-.events {
-  background:white;
-}
-
-.category-heading {
-  font-family:'Cormorant Garamond',serif;
-  font-size:30px;
-  color:var(--maroon);
-  border-bottom:1px solid #e6d4b4;
-  padding-bottom:12px;
-  margin:45px 0 22px;
-}
-
-.events-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
-}
-
-.event-card {
-  background:white;
-  border-radius:12px;
-  overflow:hidden;
-  border:1px solid #eee5d8;
-  box-shadow:0 5px 18px #0000000b;
-  transition:.35s;
-}
-
-.event-card:hover {
-  transform:translateY(-7px);
-  box-shadow:0 15px 30px #0002;
-}
-
-.event-image {
-  height:190px;
-  position:relative;
-  overflow:hidden;
-}
-
-.event-image img {
-  height:100%;
-  transition:transform .5s;
-}
-
-.event-card:hover .event-image img {
-  transform:scale(1.08);
-}
-
-.event-number {
-  position:absolute;
-  top:12px;
-  left:12px;
-  background:var(--gold);
-  color:var(--deep);
-  width:31px;
-  height:31px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:12px;
-  font-weight:700;
-}
-
-.event-info {
-  padding:19px;
-}
-
-.event-info h4 {
-  font-family:'Cormorant Garamond',serif;
-  font-size:23px;
-  color:var(--maroon);
-  margin-bottom:5px;
-}
-
-.event-info p {
-  font-size:12px;
-  color:var(--muted);
-  line-height:1.7;
-}
-
-/* GALLERY */
-
-.gallery {
-  background:var(--cream);
-}
-
-.gallery-grid {
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  grid-auto-rows:190px;
-  gap:13px;
-}
-
-.gallery-item {
-  overflow:hidden;
-  border-radius:9px;
-  position:relative;
-}
-
-.gallery-item:first-child {
-  grid-column:span 2;
-  grid-row:span 2;
-}
-
-.gallery-item img {
-  width:100%;
-  height:100%;
-  transition:transform .5s;
-}
-
-.gallery-item:hover img {
-  transform:scale(1.08);
-}
-
-/* FACILITIES */
-
-.facilities {
-  background:white;
-}
-
-.facilities-grid {
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
-}
-
-.facility-card {
-  text-align:center;
-  background:var(--cream);
-  border:1px solid #eee2ce;
-  border-radius:12px;
-  padding:30px 17px;
-  transition:.3s;
-}
-
-.facility-card:hover {
-  transform:translateY(-6px);
-  box-shadow:0 12px 25px #00000012;
-  border-color:var(--gold);
-}
-
-.facility-icon {
-  width:65px;
-  height:65px;
-  border-radius:50%;
-  background:var(--maroon);
-  color:var(--gold);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:28px;
-  margin:0 auto 17px;
-}
-
-.facility-card h3 {
-  color:var(--maroon);
-  font-size:15px;
-  margin-bottom:8px;
-}
-
-.facility-card p {
-  color:var(--muted);
-  font-size:12px;
-}
-
-/* BOOKING BANNER */
-
-.booking-banner {
-  background:
-    linear-gradient(#401020d9,#401020d9),
-    url("https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1800&q=85");
-  background-position:center;
-  background-size:cover;
-  padding:85px 20px;
-  color:white;
-  text-align:center;
-}
-
-.booking-banner h2 {
-  font-family:'Cormorant Garamond',serif;
-  font-size:48px;
-  color:var(--gold);
-  margin-bottom:12px;
-}
-
-.booking-banner p {
-  margin-bottom:25px;
-}
-
-/* CONTACT */
-
-.contact {
-  background:var(--cream);
-}
-
-.contact-grid {
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:25px;
-  max-width:850px;
-  margin:auto;
-}
-
-.contact-card {
-  background:white;
-  text-align:center;
-  padding:35px 20px;
-  border-radius:12px;
-  box-shadow:0 7px 22px #0000000b;
-}
-
-.contact-symbol {
-  width:60px;
-  height:60px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  margin:0 auto 15px;
-  border-radius:50%;
-  background:var(--cream);
-  color:var(--maroon);
-  font-size:26px;
-}
-
-.contact-card h3 {
-  font-family:'Cormorant Garamond',serif;
-  font-size:28px;
-  color:var(--maroon);
-}
-
-.contact-card p {
-  color:var(--muted);
-  font-size:13px;
-  margin:7px 0 20px;
-}
-
-.contact-buttons {
-  display:flex;
-  justify-content:center;
-  gap:10px;
-  flex-wrap:wrap;
-}
-
-.call-btn {
-  background:var(--maroon);
-  color:white;
-}
-
-.whatsapp-btn {
-  background:#25d366;
-  color:white;
-}
-
-/* LOCATION */
-
-.location {
-  background:white;
-  text-align:center;
-}
-
-.location-address {
-  color:var(--muted);
-  margin-bottom:23px;
-}
-
-.location-buttons {
-  display:flex;
-  justify-content:center;
-  gap:13px;
-  flex-wrap:wrap;
-}
-
-.map-btn {
-  background:var(--maroon);
-  color:white;
-}
-
-.instagram-btn {
-  background:#c13584;
-  color:white;
-}
-
-/* FOOTER */
-
-footer {
-  background:var(--deep);
-  color:#eee;
-  text-align:center;
-  padding:35px 15px;
-  font-size:12px;
-}
-
-.footer-logo {
-  font-family:'Cormorant Garamond',serif;
-  color:var(--gold);
-  font-size:30px;
-  font-weight:bold;
-  margin-bottom:8px;
-}
-
-footer p {margin:5px;}
-
-/* FLOATING BUTTONS */
-
-.floating-whatsapp {
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  z-index:999;
-  background:#25d366;
-  color:white;
-  border-radius:40px;
-  padding:13px 19px;
-  font-size:13px;
-  font-weight:600;
-  box-shadow:0 5px 18px #0003;
-}
-
-.back-top {
-  position:fixed;
-  right:25px;
-  bottom:80px;
-  width:40px;
-  height:40px;
-  background:var(--maroon);
-  color:white;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:22px;
-  z-index:998;
-}
-
-/* RESPONSIVE */
-
-@media(max-width:950px) {
-  .events-grid {grid-template-columns:repeat(2,1fr);}
-  .facilities-grid {grid-template-columns:repeat(2,1fr);}
-  nav {gap:13px;}
-  nav a {font-size:12px;}
-}
-
-@media(max-width:720px) {
-  .header-inner {min-height:70px;}
-  .menu-toggle {display:block;}
-
-  nav {
-    display:none;
-    position:absolute;
-    top:70px;
-    left:0;
-    width:100%;
-    background:var(--deep);
-    flex-direction:column;
-    padding:23px;
-    gap:18px;
-  }
-
-  nav.active {display:flex;}
-
-  .hero {min-height:540px;}
-  .hero h1 {font-size:49px;}
-
-  .section {padding:60px 0;}
-  .section-title {font-size:36px;}
-
-  .about-layout {
-    grid-template-columns:1fr;
-    gap:35px;
-  }
-
-  .about-image {height:300px;}
-  .about-text h2 {font-size:37px;}
-
-  .gallery-grid {
-    grid-template-columns:repeat(2,1fr);
-    grid-auto-rows:150px;
-  }
-
-  .contact-grid {grid-template-columns:1fr;}
-}
-
-@media(max-width:460px) {
-  .container {width:92%;}
-  .hero h1 {font-size:40px;}
-  .hero p {font-size:14px;}
-
-  .events-grid {grid-template-columns:1fr 1fr;gap:12px;}
-
-  .event-image {height:125px;}
-  .event-info {padding:12px;}
-  .event-info h4 {font-size:18px;}
-  .event-info p {font-size:10px;}
-
-  .facilities-grid {grid-template-columns:1fr 1fr;gap:12px;}
-  .facility-card {padding:22px 9px;}
-  .facility-card h3 {font-size:13px;}
-  .facility-card p {font-size:10px;}
-
-  .gallery-grid {grid-auto-rows:120px;}
-  .gallery-item:first-child {grid-column:span 2;grid-row:span 2;}
-
-  .booking-banner h2 {font-size:36px;}
-  .floating-whatsapp {right:10px;bottom:12px;}
-  .back-top {right:15px;bottom:65px;}
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AVS Convention Hall | Best Function Hall in Mahabubnagar</title>
+  <meta name="description" content="Celebrate weddings, receptions, birthdays and family functions at AVS Convention Hall, Srinivasa Colony, Mahabubnagar, Telangana. Contact us for bookings.">
+  <meta name="keywords" content="AVS Convention Hall, function hall Mahabubnagar, marriage hall Mahabubnagar, wedding hall, Srinivasa Colony">
+  <meta name="author" content="AVS Convention Hall">
+  <meta name="theme-color" content="#641b25">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --maroon: #641b25;
+      --dark-maroon: #3d1018;
+      --gold: #c49a50;
+      --light-gold: #e8d2a5;
+      --cream: #fffaf1;
+      --white: #ffffff;
+      --text: #352a28;
+      --muted: #756967;
+      --shadow: 0 12px 35px rgba(55, 22, 22, 0.12);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text);
+      background: var(--cream);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(1160px, 92%);
+      margin: auto;
+    }
+
+    .section {
+      padding: 85px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 42px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .section-heading h2 {
+      color: var(--maroon);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(36px, 5vw, 52px);
+      line-height: 1.15;
+    }
+
+    .section-heading p {
+      max-width: 650px;
+      margin: 12px auto 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
+      padding: 13px 24px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 600;
+      transition: 0.3s ease;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--dark-maroon);
+    }
+
+    .btn-primary:hover {
+      background: var(--light-gold);
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      border-color: rgba(255,255,255,0.8);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--maroon);
+    }
+
+    /* Header */
+
+    header {
+      background: var(--dark-maroon);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-mark {
+      width: 45px;
+      height: 45px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 25px;
+      font-weight: 700;
+      border-radius: 50%;
+    }
+
+    .logo-text strong {
+      display: block;
+      color: var(--light-gold);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 23px;
+      line-height: 1.1;
+    }
+
+    .logo-text small {
+      display: block;
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: #eadcc9;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 12px;
+      font-weight: 500;
+      color: #f8eeee;
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .nav-book {
+      background: var(--gold);
+      color: var(--dark-maroon) !important;
+      padding: 10px 17px;
+      border-radius: 3px;
+      font-weight: 700 !important;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 0;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* Hero */
+
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      color: white;
+      background:
+        linear-gradient(90deg, rgba(34, 10, 15, 0.88), rgba(34, 10, 15, 0.36)),
+        url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=2000&q=85') center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 720px;
+      padding: 100px 0;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      color: var(--light-gold);
+      border: 1px solid rgba(232,210,165,0.65);
+      padding: 8px 15px;
+      letter-spacing: 3px;
+      font-size: 10px;
+      margin-bottom: 23px;
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(48px, 7vw, 82px);
+      line-height: 1.02;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: var(--light-gold);
+    }
+
+    .hero p {
+      max-width: 560px;
+      color: #f2e8e4;
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    /* Highlights */
+
+    .highlights {
+      background: var(--maroon);
+      color: white;
+      padding: 25px 0;
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+
+    .highlight-item {
+      padding: 7px;
+      border-right: 1px solid rgba(255,255,255,0.18);
+    }
+
+    .highlight-item:last-child {
+      border: 0;
+    }
+
+    .highlight-item strong {
+      display: block;
+      color: var(--light-gold);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 25px;
+    }
+
+    .highlight-item span {
+      color: #f0e4df;
+      font-size: 11px;
+    }
+
+    /* About */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .about-images {
+      position: relative;
+      padding: 0 25px 25px 0;
+    }
+
+    .about-images img {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: var(--shadow);
+    }
+
+    .about-images::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 65%;
+      height: 65%;
+      border: 3px solid var(--gold);
+      z-index: -1;
+    }
+
+    .about-content h2 {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--maroon);
+      font-size: 46px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .about-content p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .about-note {
+      border-left: 3px solid var(--gold);
+      padding: 12px 17px;
+      background: #f7efdf;
+      margin: 22px 0;
+      color: var(--maroon);
+      font-size: 13px;
+    }
+
+    /* Events */
+
+    .events-section {
+      background: #f7f0e7;
+    }
+
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .event-card {
+      background: white;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+      transition: 0.3s ease;
+    }
+
+    .event-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow);
+    }
+
+    .event-card img {
+      width: 100%;
+      height: 205px;
+      object-fit: cover;
+      transition: 0.4s;
+    }
+
+    .event-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .event-card h3 {
+      padding: 16px 17px;
+      color: var(--maroon);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+
+    /* Facilities */
+
+    .facilities-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .facility-card {
+      padding: 28px 20px;
+      text-align: center;
+      background: white;
+      border: 1px solid #eee3d3;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .facility-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-5px);
+    }
+
+    .facility-icon {
+      width: 58px;
+      height: 58px;
+      margin: 0 auto 16px;
+      display: grid;
+      place-items: center;
+      background: #f6ecda;
+      color: var(--maroon);
+      border-radius: 50%;
+      font-size: 25px;
+    }
+
+    .facility-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 21px;
+      color: var(--maroon);
+      margin-bottom: 7px;
+    }
+
+    .facility-card p {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* Gallery */
+
+    .gallery-section {
+      background: #f7f0e7;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 210px;
+      gap: 12px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 4px;
+      position: relative;
+    }
+
+    .gallery-item:first-child {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+
+    /* Booking banner */
+
+    .booking-banner {
+      padding: 75px 20px;
+      text-align: center;
+      color: white;
+      background:
+        linear-gradient(rgba(61,16,24,0.88), rgba(61,16,24,0.88)),
+        url('https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1800&q=80') center/cover;
+    }
+
+    .booking-banner h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(36px, 5vw, 54px);
+      margin-bottom: 12px;
+    }
+
+    .booking-banner p {
+      color: #f2e4dc;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    /* Contact */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+    }
+
+    .contact-info h3,
+    .contact-card h3 {
+      color: var(--maroon);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 27px;
+      margin-bottom: 14px;
+    }
+
+    .contact-info p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .contact-detail {
+      display: flex;
+      gap: 13px;
+      margin: 18px 0;
+      align-items: flex-start;
+    }
+
+    .contact-detail .symbol {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      background: #f4ead8;
+      color: var(--maroon);
+      border-radius: 50%;
+    }
+
+    .contact-detail strong {
+      display: block;
+      color: var(--maroon);
+      font-size: 13px;
+    }
+
+    .contact-detail span,
+    .contact-detail a {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .contact-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .contact-card {
+      padding: 25px 18px;
+      background: white;
+      border: 1px solid #eee3d3;
+      border-radius: 5px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+    }
+
+    .contact-card p {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 15px;
+    }
+
+    .contact-card .person-name {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--maroon);
+      margin-bottom: 5px;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .small-btn {
+      padding: 9px 11px;
+      font-size: 11px;
+      border-radius: 3px;
+      font-weight: 600;
+    }
+
+    .call-btn {
+      background: var(--maroon);
+      color: white;
+    }
+
+    .whatsapp-btn {
+      background: #168b50;
+      color: white;
+    }
+
+    .map-btn {
+      background: var(--gold);
+      color: var(--dark-maroon);
+      margin-top: 10px;
+    }
+
+    .instagram-btn {
+      display: inline-block;
+      background: var(--maroon);
+      color: white;
+      padding: 12px 18px;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+
+    /* Footer */
+
+    footer {
+      background: var(--dark-maroon);
+      color: white;
+      padding: 45px 0 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 35px;
+      padding-bottom: 30px;
+    }
+
+    .footer-grid h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 25px;
+      color: var(--light-gold);
+      margin-bottom: 12px;
+    }
+
+    .footer-grid p,
+    .footer-grid a {
+      color: #e6d6d2;
+      font-size: 12px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin: 7px 0;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,0.15);
+      padding-top: 18px;
+      text-align: center;
+      color: #d9c8c3;
+      font-size: 11px;
+    }
+
+    /* Floating buttons */
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 22px;
+      z-index: 999;
+      width: 57px;
+      height: 57px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #20b968;
+      color: white;
+      font-size: 28px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+    .back-top {
+      position: fixed;
+      left: 20px;
+      bottom: 22px;
+      z-index: 999;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--maroon);
+      color: white;
+      font-size: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.18);
+    }
+
+    /* Responsive design */
+
+    @media (max-width: 900px) {
+      .nav-links {
+        gap: 13px;
+      }
+
+      .nav-links a {
+        font-size: 11px;
+      }
+
+      .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .facilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid {
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .navbar {
+        min-height: 68px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 68px;
+        padding: 18px 5%;
+        background: var(--dark-maroon);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links li {
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 12px 5px;
+        font-size: 13px;
+      }
+
+      .nav-book {
+        display: inline-block !important;
+        margin: 8px 0;
+        text-align: center;
+      }
+
+      .hero {
+        min-height: 570px;
+        background-position: 60% center;
+      }
+
+      .hero-content {
+        padding: 75px 0;
+      }
+
+      .hero p {
+        font-size: 13px;
+      }
+
+      .highlight-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+      }
+
+      .highlight-item:nth-child(2) {
+        border-right: 0;
+      }
+
+      .section {
+        padding: 65px 0;
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-images img {
+        height: 320px;
+      }
+
+      .about-content h2 {
+        font-size: 39px;
+      }
+
+      .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 13px;
+      }
+
+      .event-card img {
+        height: 145px;
+      }
+
+      .event-card h3 {
+        font-size: 18px;
+        padding: 12px;
+      }
+
+      .facilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .facility-card {
+        padding: 22px 12px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 150px;
+      }
+
+      .gallery-item:first-child {
+        grid-column: span 2;
+        grid-row: span 1;
+      }
+
+      .contact-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .events-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .event-card img {
+        height: 200px;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <div class="header-inner">
-    <a href="#home" class="logo">
-      AVS
-      <small>CONVENTION HALL</small>
-    </a>
+  <!-- HEADER -->
+  <header>
+    <div class="container navbar">
 
-    <button class="menu-toggle" id="menuToggle"
-      onclick="toggleMenu()" aria-label="Toggle menu"
-      aria-expanded="false">☰</button>
-
-    <nav id="navigation">
-      <a href="#home" onclick="closeMenu()">Home</a>
-      <a href="#about" onclick="closeMenu()">About</a>
-      <a href="#events" onclick="closeMenu()">Events</a>
-      <a href="#gallery" onclick="closeMenu()">Gallery</a>
-      <a href="#facilities" onclick="closeMenu()">Facilities</a>
-      <a href="#contact" onclick="closeMenu()">Contact</a>
-      <a href="#contact" class="nav-book" onclick="closeMenu()">Book Now</a>
-    </nav>
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-content">
-    <div class="hero-tag">A SPECIAL PLACE FOR SPECIAL MOMENTS</div>
-    <h1>Make Your Special Occasions Memorable!</h1>
-    <p>
-      Weddings, Receptions, Birthdays, Traditional Ceremonies
-      and Celebrations — Welcome to AVS Convention Hall.
-    </p>
-    <div class="hero-buttons">
-      <a href="#contact" class="btn btn-gold">Enquire Now</a>
-      <a href="https://wa.me/919000865070?text=Hello%20AVS%20Convention%20Hall%2C%20I%20would%20like%20to%20enquire%20about%20a%20booking."
-         target="_blank" rel="noopener" class="btn btn-outline">
-        WhatsApp Us
+      <a href="#home" class="logo">
+        <div class="logo-mark">AVS</div>
+        <div class="logo-text">
+          <strong>AVS Convention Hall</strong>
+          <small>CELEBRATE EVERY MOMENT</small>
+        </div>
       </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-book" href="#contact">Book Now</a></li>
+      </ul>
+
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- ABOUT -->
-<section class="section about" id="about">
-  <div class="container about-layout">
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
 
-    <div class="about-image">
-      <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=85"
-           alt="Convention hall celebration setup">
+        <div class="hero-tag">A BEAUTIFUL PLACE FOR BEAUTIFUL MOMENTS</div>
+
+        <h1>
+          Your Special Moments,<br>
+          <span>Our Perfect Venue</span>
+        </h1>
+
+        <p>
+          Make your celebrations memorable at AVS Convention Hall.
+          A welcoming venue for weddings, traditional ceremonies,
+          family celebrations and special occasions in Mahabubnagar.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Enquire for Booking →</a>
+          <a href="#gallery" class="btn btn-outline">Explore Gallery</a>
+        </div>
+
+      </div>
     </div>
+  </section>
 
-    <div class="about-text">
-      <div class="about-label">ABOUT OUR VENUE</div>
-      <h2>Celebrate Life's Beautiful Moments With Us</h2>
-      <div class="gold-line" style="margin-left:0"></div>
+  <!-- HIGHLIGHTS -->
+  <section class="highlights">
+    <div class="container highlight-grid">
 
-      <p>
-        Welcome to <strong>AVS Convention Hall</strong>,
-        located in Srinivasa Colony, Mahabubnagar, Telangana.
-      </p>
+      <div class="highlight-item">
+        <strong>Elegant</strong>
+        <span>Celebration Space</span>
+      </div>
 
-      <p>
-        From weddings and receptions to birthday celebrations,
-        traditional ceremonies, family gatherings and corporate events,
-        we welcome you to celebrate your important occasions with us.
-      </p>
+      <div class="highlight-item">
+        <strong>Comfort</strong>
+        <span>Guest Experience</span>
+      </div>
 
-      <p>
-        Our facilities include a spacious hall, AC, ample parking,
-        power backup, catering support and customizable decoration.
-      </p>
+      <div class="highlight-item">
+        <strong>Special</strong>
+        <span>Family Occasions</span>
+      </div>
 
-      <a href="#facilities" class="btn btn-gold">Explore Our Facilities</a>
+      <div class="highlight-item">
+        <strong>Convenient</strong>
+        <span>Mahabubnagar Location</span>
+      </div>
+
     </div>
-
-  </div>
-</section>
-
-<!-- EVENTS -->
-<section class="section events" id="events">
-<div class="container">
-
-<h2 class="section-title">Events & Celebrations</h2>
-<div class="gold-line"></div>
-<p class="section-subtitle">
-  A venue for your weddings, family celebrations,
-  traditional ceremonies and professional gatherings.
-</p>
-
-<h3 class="category-heading">💍 Weddings & Wedding Celebrations</h3>
-<div class="events-grid">
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80" alt="Engagement celebration"><span class="event-number">1</span></div><div class="event-info"><h4>Engagements</h4><p>Celebrate the beginning of a beautiful relationship.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=700&q=80" alt="Indian wedding"><span class="event-number">2</span></div><div class="event-info"><h4>Weddings / Marriages</h4><p>Celebrate your wedding with family and friends.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=700&q=80" alt="Pre wedding celebration"><span class="event-number">3</span></div><div class="event-info"><h4>Pre-Wedding Celebrations</h4><p>Celebrate the special moments leading up to your wedding.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=700&q=80" alt="Wedding reception"><span class="event-number">4</span></div><div class="event-info"><h4>Wedding Receptions</h4><p>Welcome and celebrate with your family and guests.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=700&q=80" alt="Reception celebration"><span class="event-number">5</span></div><div class="event-info"><h4>Post-Wedding Receptions</h4><p>Host celebrations and gatherings after your wedding.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=700&q=80" alt="Haldi celebration"><span class="event-number">6</span></div><div class="event-info"><h4>Haldi Ceremony</h4><p>Celebrate this colourful pre-wedding tradition.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=700&q=80" alt="Mehendi ceremony"><span class="event-number">7</span></div><div class="event-info"><h4>Mehendi Ceremony</h4><p>Celebrate the beautiful tradition of mehendi.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=700&q=80" alt="Sangeet function"><span class="event-number">8</span></div><div class="event-info"><h4>Sangeet Ceremony</h4><p>Enjoy music, dance and wedding celebrations.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80" alt="Traditional wedding ceremony"><span class="event-number">9</span></div><div class="event-info"><h4>Pellikoduku / Pellikuthuru</h4><p>Celebrate traditional pre-wedding family ceremonies.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=700&q=80" alt="Anniversary celebration"><span class="event-number">10</span></div><div class="event-info"><h4>Wedding Anniversaries</h4><p>Celebrate years of love and togetherness.</p></div></div>
-
-</div>
-
-<h3 class="category-heading">🙏 Traditional & Religious Ceremonies</h3>
-<div class="events-grid">
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80" alt="Traditional celebration"><span class="event-number">11</span></div><div class="event-info"><h4>Half Saree Functions</h4><p>Celebrate traditional coming-of-age occasions.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=700&q=80" alt="Traditional ceremony"><span class="event-number">12</span></div><div class="event-info"><h4>Dhoti Ceremony</h4><p>Celebrate important traditional milestones.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=700&q=80" alt="Baby naming celebration"><span class="event-number">13</span></div><div class="event-info"><h4>Naming Ceremony</h4><p>Celebrate your baby's special naming occasion.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=700&q=80" alt="Baby celebration"><span class="event-number">14</span></div><div class="event-info"><h4>Annaprashana</h4><p>Celebrate your baby's first rice-feeding ceremony.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=700&q=80" alt="Cradle ceremony"><span class="event-number">15</span></div><div class="event-info"><h4>Cradle Ceremony</h4><p>Celebrate your little one's arrival.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=700&q=80" alt="Family milestone celebration"><span class="event-number">16</span></div><div class="event-info"><h4>Shastipurti</h4><p>Celebrate the traditional 60th birthday milestone.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=700&q=80" alt="Baby shower"><span class="event-number">17</span></div><div class="event-info"><h4>Seemantham / Baby Shower</h4><p>Celebrate the special journey towards parenthood.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=80" alt="New home celebration"><span class="event-number">18</span></div><div class="event-info"><h4>Gruhapravesham</h4><p>Celebrate entering a new home with loved ones.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1604608672516-5f9e6e8a5c6b?auto=format&fit=crop&w=700&q=80" alt="Religious gathering"><span class="event-number">19</span></div><div class="event-info"><h4>Satyanarayana Swamy Vratham</h4><p>Host traditional religious gatherings and functions.</p></div></div>
-
-</div>
-
-<h3 class="category-heading">🎉 Birthday & Family Celebrations</h3>
-<div class="events-grid">
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=700&q=80" alt="Birthday party"><span class="event-number">20</span></div><div class="event-info"><h4>Birthday Celebrations</h4><p>Celebrate your special day with loved ones.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1464349153735-7db50ed83c84?auto=format&fit=crop&w=700&q=80" alt="First birthday party"><span class="event-number">21</span></div><div class="event-info"><h4>First Birthday</h4><p>Make your little one's first birthday memorable.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=700&q=80" alt="Family gathering"><span class="event-number">22</span></div><div class="event-info"><h4>Family Gatherings</h4><p>Bring your family together for special moments.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=700&q=80" alt="Retirement celebration"><span class="event-number">23</span></div><div class="event-info"><h4>Retirement Celebrations</h4><p>Honour achievements and memorable career journeys.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=700&q=80" alt="Felicitations"><span class="event-number">24</span></div><div class="event-info"><h4>Felicitations</h4><p>Recognize achievements and honour special people.</p></div></div>
-
-</div>
-
-<h3 class="category-heading">🏢 Business & Professional Events</h3>
-<div class="events-grid">
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=700&q=80" alt="Business meeting"><span class="event-number">25</span></div><div class="event-info"><h4>Meetings</h4><p>A venue for meetings and group discussions.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=700&q=80" alt="Corporate event"><span class="event-number">26</span></div><div class="event-info"><h4>Corporate Events</h4><p>Host professional gatherings and company functions.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=700&q=80" alt="Conference"><span class="event-number">27</span></div><div class="event-info"><h4>Conferences & Seminars</h4><p>Organize professional presentations and seminars.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=700&q=80" alt="Product launch"><span class="event-number">28</span></div><div class="event-info"><h4>Product Launches</h4><p>Introduce new products and services.</p></div></div>
-
-<div class="event-card"><div class="event-image"><img loading="lazy" src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=700&q=80" alt="Award ceremony"><span class="event-number">29</span></div><div class="event-info"><h4>Award Functions</h4><p>Recognize achievements and celebrate success.</p></div></div>
-
-</div>
-</div>
-</section>
-
-<!-- GALLERY -->
-<section class="section gallery" id="gallery">
-<div class="container">
-<h2 class="section-title">Celebrations & Venue Gallery</h2>
-<div class="gold-line"></div>
-<p class="section-subtitle">
-  A glimpse of beautiful celebration settings and event inspiration.
-  Replace these sample photographs with actual AVS Convention Hall photos.
-</p>
-
-<div class="gallery-grid">
-  <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=85" alt="Wedding venue inspiration"></div>
-  <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80" alt="Wedding celebration"></div>
-  <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=700&q=80" alt="Wedding reception setup"></div>
-  <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=700&q=80" alt="Celebration decorations"></div>
-  <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=700&q=80" alt="Special occasion"></div>
-  <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=700&q=80" alt="Wedding function"></div>
-</div>
-</div>
-</section>
-
-<!-- FACILITIES -->
-<section class="section facilities" id="facilities">
-<div class="container">
-<h2 class="section-title">Our Facilities & Amenities</h2>
-<div class="gold-line"></div>
-<p class="section-subtitle">
-  Thoughtful facilities and support for your celebrations.
-</p>
-
-<div class="facilities-grid">
-
-<div class="facility-card">
-<div class="facility-icon">🏛️</div>
-<h3>Spacious Hall</h3>
-<p>A spacious venue for celebrations and gatherings.</p>
-</div>
-
-<div class="facility-card">
-<div class="facility-icon">❄️</div>
-<h3>AC Facility</h3>
-<p>Air-conditioned comfort for your occasions.</p>
-</div>
-
-<div class="facility-card">
-<div class="facility-icon">🚗</div>
-<h3>Ample Parking</h3>
-<p>Convenient parking arrangements for guests.</p>
-</div>
-
-<div class="facility-card">
-<div class="facility-icon">⚡</div>
-<h3>Power Backup</h3>
-<p>Power backup support for your events.</p>
-</div>
-
-<div class="facility-card">
-<div class="facility-icon">🍽️</div>
-<h3>Catering Support</h3>
-<p>Catering support for celebrations and functions.</p>
-</div>
-
-<div class="facility-card">
-<div class="facility-icon">🌸</div>
-<h3>Customizable Decoration</h3>
-<p>Decoration arrangements customized for your event.</p>
-</div>
-
-<div class="facility-card">
-<div class="facility-icon">📽️</div>
-<h3>Projector Facility</h3>
-<p>Projector facility for presentations and occasions.</p>
-</div>
-
-<div class="facility-card">
-<div class="facility-icon">✨</div>
-<h3>Clean & Well Maintained</h3>
-<p>A clean and well-maintained venue for your guests.</p>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- BOOKING BANNER -->
-<section class="booking-banner">
-<h2>Make Your Next Celebration Special</h2>
-<p>Contact AVS Convention Hall for booking enquiries and details.</p>
-<a href="https://wa.me/919000865070?text=Hello%20AVS%20Convention%20Hall%2C%20I%20would%20like%20to%20enquire%20about%20a%20booking."
-   target="_blank" rel="noopener" class="btn btn-gold">
-  Enquire on WhatsApp
-</a>
-</section>
-
-<!-- CONTACT -->
-<section class="section contact" id="contact">
-<div class="container">
-
-<h2 class="section-title">Get In Touch</h2>
-<div class="gold-line"></div>
-<p class="section-subtitle">
-  We welcome your booking enquiries. Contact our team for more information.
-</p>
-
-<div class="contact-grid">
-
-<div class="contact-card">
-<div class="contact-symbol">☎</div>
-<h3>Naveen Kumar</h3>
-<p>AVS Convention Hall</p>
-<div class="contact-buttons">
-<a href="tel:+919000865070" class="btn call-btn">Call Now</a>
-<a href="https://wa.me/919000865070" target="_blank" rel="noopener" class="btn whatsapp-btn">WhatsApp</a>
-</div>
-</div>
-
-<div class="contact-card">
-<div class="contact-symbol">☎</div>
-<h3>Sreekanth</h3>
-<p>AVS Convention Hall</p>
-<div class="contact-buttons">
-<a href="tel:+919491491719" class="btn call-btn">Call Now</a>
-<a href="https://wa.me/919491491719" target="_blank" rel="noopener" class="btn whatsapp-btn">WhatsApp</a>
-</div>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- LOCATION -->
-<section class="section location">
-<div class="container">
-<h2 class="section-title">Visit AVS Convention Hall</h2>
-<div class="gold-line"></div>
-<p class="location-address">
-  📍 Srinivasa Colony, Mahabubnagar, Telangana.
-</p>
-
-<div class="location-buttons">
-<a href="https://tinyurl.com/Avsconventionhallmbnr"
-   target="_blank" rel="noopener" class="btn map-btn">
-  📍 Google Maps Location
-</a>
-
-<a href="https://www.instagram.com/avs_convention_ac_hall/"
-   target="_blank" rel="noopener" class="btn instagram-btn">
-  📷 Follow on Instagram
-</a>
-</div>
-</div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-<div class="footer-logo">AVS CONVENTION HALL</div>
-<p>Srinivasa Colony, Mahabubnagar, Telangana.</p>
-<p>Making Your Special Occasions Memorable!</p>
-<p>© <span id="year"></span> AVS Convention Hall. All Rights Reserved.</p>
-</footer>
-
-<!-- FLOATING WHATSAPP -->
-<a class="floating-whatsapp"
-   href="https://wa.me/919000865070?text=Hello%20AVS%20Convention%20Hall%2C%20I%20would%20like%20to%20make%20a%20booking%20enquiry."
-   target="_blank" rel="noopener">
-  💬 WhatsApp
-</a>
-
-<a href="#home" class="back-top" aria-label="Back to top">↑</a>
-
-<script>
-function toggleMenu() {
-  const nav = document.getElementById("navigation");
-  const button = document.getElementById("menuToggle");
-
-  nav.classList.toggle("active");
-  button.setAttribute(
-    "aria-expanded",
-    nav.classList.contains("active")
-  );
-}
-
-function closeMenu() {
-  document.getElementById("navigation").classList.remove("active");
-  document.getElementById("menuToggle").setAttribute("aria-expanded","false");
-}
-
-document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+
+      <div class="about-images">
+        <img
+          src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=85"
+          alt="Beautifully decorated event venue">
+      </div>
+
+      <div class="about-content">
+        <span class="eyebrow">Welcome to AVS</span>
+
+        <h2>A Venue Where Memories Become Special</h2>
+
+        <p>
+          Every celebration deserves a beautiful setting. AVS Convention Hall
+          provides a welcoming space for families and guests to come together
+          and celebrate life's important occasions.
+        </p>
+
+        <p>
+          From weddings and receptions to birthdays, traditional ceremonies
+          and family gatherings, make your special day memorable with us.
+        </p>
+
+        <div class="about-note">
+          Your celebrations matter to us. Contact our team to discuss
+          your event requirements and booking details.
+        </div>
+
+        <a href="#contact" class="btn btn-primary">Contact Us →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="section events-section" id="events">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">Celebrate Every Occasion</span>
+        <h2>Events & Celebrations</h2>
+        <p>
+          A venue for memorable occasions, family functions,
+          traditional ceremonies and professional gatherings.
+        </p>
+      </div>
+
+      <div class="events-grid">
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Engagement celebration" loading="lazy">
+          <h3>Engagements</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?auto=format&fit=crop&w=800&q=80" alt="Wedding celebration" loading="lazy">
+          <h3>Weddings / Marriages</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80" alt="Pre wedding celebration" loading="lazy">
+          <h3>Pre-Wedding Celebrations</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=800&q=80" alt="Wedding reception" loading="lazy">
+          <h3>Wedding Receptions</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80" alt="Post wedding reception" loading="lazy">
+          <h3>Post-Wedding Receptions</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80" alt="Haldi ceremony" loading="lazy">
+          <h3>Haldi Ceremony</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=800&q=80" alt="Mehendi ceremony" loading="lazy">
+          <h3>Mehendi Ceremony</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=800&q=80" alt="Sangeet ceremony" loading="lazy">
+          <h3>Sangeet Ceremony</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Pellikoduku and Pellikuthuru" loading="lazy">
+          <h3>Pellikoduku / Pellikuthuru</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" alt="Wedding anniversary" loading="lazy">
+          <h3>Wedding Anniversaries</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" alt="Half saree function" loading="lazy">
+          <h3>Half Saree Functions</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Dhoti ceremony" loading="lazy">
+          <h3>Dhoti Ceremony</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=80" alt="Naming ceremony" loading="lazy">
+          <h3>Naming Ceremony</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80" alt="Annaprashana ceremony" loading="lazy">
+          <h3>Annaprashana</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=80" alt="Cradle ceremony" loading="lazy">
+          <h3>Cradle Ceremony</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" alt="Shastipurti celebration" loading="lazy">
+          <h3>Shastipurti</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80" alt="Seemantham baby shower" loading="lazy">
+          <h3>Seemantham / Baby Shower</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" alt="Gruhapravesham celebration" loading="lazy">
+          <h3>Gruhapravesham</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" alt="Satyanarayana Swamy Vratham" loading="lazy">
+          <h3>Satyanarayana Swamy Vratham</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80" alt="Birthday celebration" loading="lazy">
+          <h3>Birthday Celebrations</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=800&q=80" alt="First birthday celebration" loading="lazy">
+          <h3>First Birthday</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" alt="Family gathering" loading="lazy">
+          <h3>Family Gatherings</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" alt="Retirement celebration" loading="lazy">
+          <h3>Retirement Celebrations</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80" alt="Felicitations" loading="lazy">
+          <h3>Felicitations</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80" alt="Business meeting" loading="lazy">
+          <h3>Meetings</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80" alt="Corporate event" loading="lazy">
+          <h3>Corporate Events</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80" alt="Conference and seminar" loading="lazy">
+          <h3>Conferences & Seminars</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1559223607-a43c990c692c?auto=format&fit=crop&w=800&q=80" alt="Product launch event" loading="lazy">
+          <h3>Product Launches</h3>
+        </article>
+
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80" alt="Award function" loading="lazy">
+          <h3>Award Functions</h3>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FACILITIES -->
+  <section class="section" id="facilities">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">Comfort & Convenience</span>
+        <h2>Our Facilities</h2>
+        <p>
+          Thoughtful facilities to help make your event comfortable
+          and convenient for you and your guests.
+        </p>
+      </div>
+
+      <div class="facilities-grid">
+
+        <div class="facility-card">
+          <div class="facility-icon">🏛️</div>
+          <h3>Spacious Hall</h3>
+          <p>A welcoming space for your special occasions.</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon">❄️</div>
+          <h3>AC Facility</h3>
+          <p>Air-conditioned comfort for your guests.</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon">🚗</div>
+          <h3>Ample Parking</h3>
+          <p>Convenient parking arrangements for visitors.</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon">⚡</div>
+          <h3>Power Backup</h3>
+          <p>Backup arrangements for added convenience.</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon">🍽️</div>
+          <h3>Catering Support</h3>
+          <p>Support for your event catering requirements.</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon">🌸</div>
+          <h3>Decoration</h3>
+          <p>Customizable decoration arrangements.</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon">📽️</div>
+          <h3>Projector Facility</h3>
+          <p>Presentation and display support for events.</p>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon">✨</div>
+          <h3>Clean & Maintained</h3>
+          <p>A clean and well-maintained event space.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">A Glimpse of Celebrations</span>
+        <h2>Photo Gallery</h2>
+        <p>
+          Explore event and celebration inspiration.
+          Replace these sample photographs with actual AVS Convention Hall photos.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=85" alt="Event venue decoration" loading="lazy">
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80" alt="Wedding celebration" loading="lazy">
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=700&q=80" alt="Wedding table decoration" loading="lazy">
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=700&q=80" alt="Wedding reception" loading="lazy">
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=700&q=80" alt="Party celebration" loading="lazy">
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=700&q=80" alt="Event gathering" loading="lazy">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING BANNER -->
+  <section class="booking-banner">
+    <div class="container">
+      <span class="eyebrow">Make Your Occasion Memorable</span>
+      <h2>Planning a Special Celebration?</h2>
+      <p>Get in touch with us to discuss your event and booking requirements.</p>
+      <a href="#contact" class="btn btn-primary">Enquire Now →</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">We Are Here to Help</span>
+        <h2>Contact & Bookings</h2>
+        <p>
+          Contact our team for venue enquiries, availability
+          and booking information.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h3>Visit AVS Convention Hall</h3>
+
+          <p>
+            We welcome your enquiries. Call or message us
+            to discuss your upcoming celebration.
+          </p>
+
+          <div class="contact-detail">
+            <div class="symbol">📍</div>
+            <div>
+              <strong>Address</strong>
+              <span>Srinivasa Colony, Mahabubnagar, Telangana, India</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="symbol">📞</div>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+919000865070">+91 90008 65070</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="symbol">💬</div>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/919000865070" target="_blank" rel="noopener">
+                Message us on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="symbol">📷</div>
+            <div>
+              <strong>Instagram</strong>
+              <a href="https://www.instagram.com/avs_convention_ac_hall/" target="_blank" rel="noopener">
+                @avs_convention_ac_hall
+              </a>
+            </div>
+          </div>
+
+          <a
+            class="btn map-btn"
+            href="https://maps.app.goo.gl/AptVzv3bpSi44kQ4A?g_st=aw"
+            target="_blank"
+            rel="noopener">
+            📍 Get Directions on Google Maps →
+          </a>
+
+          <br>
+
+          <a
+            class="instagram-btn"
+            href="https://www.instagram.com/avs_convention_ac_hall/"
+            target="_blank"
+            rel="noopener">
+            Follow us on Instagram
+          </a>
+
+        </div>
+
+        <div class="contact-cards">
+
+          <div class="contact-card">
+            <h3>Booking Enquiries</h3>
+            <p>Contact for event and venue booking information.</p>
+
+            <div class="person-name">Naveen Kumar</div>
+            <p>AVS Convention Hall</p>
+
+            <div class="contact-actions">
+              <a class="btn small-btn call-btn" href="tel:+919000865070">
+                ☎ Call
+              </a>
+
+              <a class="btn small-btn whatsapp-btn"
+                 href="https://wa.me/919000865070"
+                 target="_blank" rel="noopener">
+                WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <h3>Booking Enquiries</h3>
+            <p>Contact for event and venue booking information.</p>
+
+            <div class="person-name">Sreekanth</div>
+            <p>AVS Convention Hall</p>
+
+            <div class="contact-actions">
+              <a class="btn small-btn call-btn" href="tel:+919491491719">
+                ☎ Call
+              </a>
+
+              <a class="btn small-btn whatsapp-btn"
+                 href="https://wa.me/919491491719"
+                 target="_blank" rel="noopener">
+                WhatsApp
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <h3>AVS Convention Hall</h3>
+          <p>
+            A welcoming venue for weddings, family functions,
+            traditional ceremonies and special celebrations
+            in Mahabubnagar.
+          </p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Find Us</h3>
+          <p>Srinivasa Colony, Mahabubnagar, Telangana.</p>
+          <p>
+            <a href="https://maps.app.goo.gl/AptVzv3bpSi44kQ4A?g_st=aw"
+               target="_blank" rel="noopener">
+              Open Google Maps →
+            </a>
+          </p>
+          <p>
+            <a href="https://www.instagram.com/avs_convention_ac_hall/"
+               target="_blank" rel="noopener">
+              Instagram →
+            </a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        © <span id="year"></span> AVS Convention Hall. All Rights Reserved.
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/919000865070"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat with AVS Convention Hall on WhatsApp">
+    ☎
+  </a>
+
+  <!-- BACK TO TOP -->
+  <a class="back-top" href="#home" aria-label="Back to top">↑</a>
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', function () {
+      const isOpen = navLinks.classList.toggle('active');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+      menuToggle.textContent = isOpen ? '✕' : '☰';
+    });
+
+    // Close mobile menu after selecting a link
+    document.querySelectorAll('.nav-links a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navLinks.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.textContent = '☰';
+      });
+    });
+
+    // Automatically update copyright year
+    document.getElementById('year').textContent =
+      new Date().getFullYear();
+  </script>
 
 </body>
 </html>
